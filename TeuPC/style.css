@@ -78,3 +78,27 @@ footer p{
     color: white;
   }
   
+  .row {
+    float: right;
+    width: 70%;
+   
+}
+
+/* card fixo no carousel */
+  .card {
+    float: inline-end;
+    height: 250px;
+    margin-top: -47px;
+}
+
+  .card-body {
+    background-color: #02020b;
+    margin-top: -65px;
+}
+
+  .card-text {
+    color: #04AA6D;
+  }
+
+
+  
