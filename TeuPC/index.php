@@ -47,9 +47,10 @@ include_once "includes/header.php";
 <div class="card">
   <img class="card-img-top" src="imagens/card1.png" alt="Imagem de capa do card">
   <div class="card-body">
-    <h5 class="card-title">Título do card</h5>
-    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-    <a href="#" class="btn btn-primary">Visitar</a>
+    <h5 class="card-title" style="color: white">TEUPC, A Maneira mais facil de montar um!</h5>
+    <p class="card-text">Conte conosco para montar o teu melhor PC de forma fácil e rápida. Mais de 100 peças selecionadas a dedo visando qualidade e confiança.
+    </p>
+    <a href="#" class="btn btn-primary">Monte o TEU!</a>
   </div>
 </div>
 
