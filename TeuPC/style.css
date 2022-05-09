@@ -89,13 +89,11 @@ footer p{
 /* card fixo no carousel */
   .card {
     float: inline-end;
-    height: 100px;
     margin-top: -50px;
 }
 
   .card-body {
-    background-color: #02020b;
-    height: 100px;  
+    background-color: #02020b; 
 }
 
   .card-text {
@@ -103,5 +101,11 @@ footer p{
   }
 
   .main{
-    height: 1000px;
+    height: 900px;
+  }
+
+  hr{
+    border-color:#aaa;
+    box-sizing:border-box;
+    width: 100%;  
   }
