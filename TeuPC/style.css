@@ -3,7 +3,9 @@
 }
 header{
     width: auto;
-    height: auto;    
+    height: auto;
+    z-index: 1;    
+    position: absolute;
 }
 img{
     width: 800px;

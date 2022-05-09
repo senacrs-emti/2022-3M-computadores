@@ -3,14 +3,13 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 
-
-
 <div class="row">
+<div class= "container" style="width: 100%">  
 <!-- Carousel -->
-<div class= "container">
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
   <!-- Indicators/dots -->
+  
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
