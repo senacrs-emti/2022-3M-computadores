@@ -7,6 +7,7 @@ include_once "includes/header.php";
 
 <div class="row">
 <!-- Carousel -->
+<div class= "container">
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
   <!-- Indicators/dots -->
@@ -52,6 +53,7 @@ include_once "includes/header.php";
     </p>
     <a href="#" class="btn btn-primary">Monte o TEU!</a>
   </div>
+</div>
 </div>
 
 <br>
