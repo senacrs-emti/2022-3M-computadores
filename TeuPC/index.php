@@ -19,13 +19,13 @@ include_once "includes/header.php";
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="imagens/coisalinda.jpg" alt="Los Angeles" class="d-block w-100">
+      <img src="imagens/coisalinda.jpg" alt="Los Angeles" class="d-block w-100 h-500">
     </div>
     <div class="carousel-item">
-      <img src="imagens/coisalinda2.jpg" alt="Chicago" class="d-block w-100">
+      <img src="imagens/coisalinda2.jpg" alt="Chicago" class="d-block w-100 h-500">
     </div>
     <div class="carousel-item">
-      <img src="imagens/coisalinda3.jpg" alt="New York" class="d-block w-100">
+      <img src="imagens/coisalinda3.jpg" alt="New York" class="d-block w-100 h-500">
     </div>
   </div>
 
