@@ -2,9 +2,8 @@
 include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
-
-<div class="row">
-<div class= "container" style="width: 100%">  
+<div class= "main" style="flex: auto"> 
+<div class="row">  
 <!-- Carousel -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -41,11 +40,9 @@ include_once "includes/header.php";
 
 <br>
 <br>
-</div>
-
 
 <div class="card">
-  <img class="card-img-top" src="imagens/card1.png" alt="Imagem de capa do card">
+  <img class="card-img-top" src="imagens/card1.png" alt="Imagem de capa do card" style="height: 325px">
   <div class="card-body">
     <h5 class="card-title" style="color: white">TEUPC, A Maneira mais facil de montar um!</h5>
     <p class="card-text">Conte conosco para montar o teu melhor PC de forma fácil e rápida. Mais de 100 peças selecionadas a dedo visando qualidade e confiança.
@@ -68,9 +65,9 @@ include_once "includes/header.php";
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
+
+
+
 
 
 <?php
