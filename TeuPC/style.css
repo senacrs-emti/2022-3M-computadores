@@ -3,8 +3,7 @@
 }
 header{
     width: auto;
-    height: auto;
-    z-index: -1;    
+    height: auto;    
 }
 img{
     width: 800px;
@@ -91,6 +90,7 @@ footer p{
     float: inline-end;
     height: 150px;
     margin-top: -47px;
+    z-index: -1;
 }
 
   .card-body {
