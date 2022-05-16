@@ -57,23 +57,6 @@ include_once "includes/header.php";
 
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
 
 <?php
 

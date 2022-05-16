@@ -89,7 +89,9 @@ footer p{
 /* card fixo no carousel */
   .card {
     float: inline-end;
-    margin-top: -50px;
+    margin-top: -48px;
+    border: none;
+    height: 500px;
 }
 
   .card-body {
@@ -109,3 +111,7 @@ footer p{
     box-sizing:border-box;
     width: 100%;    
   }
+
+  html, body {
+    overflow-x: hidden;
+   }
