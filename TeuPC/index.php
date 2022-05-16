@@ -41,8 +41,8 @@ include_once "includes/header.php";
 <br>
 <br>
 
-<div class="card" style="height: 311px">
-  <img class="card-img-top" src="imagens/card1.png" alt="Imagem de capa do card" style="height: 311px">
+<div class="card" style="height: 331px">
+  <img class="card-img-top" src="imagens/card1.png" alt="Imagem de capa do card" style="height: 335px">
   <div class="card-body">
     <h5 class="card-title" style="color: white">TEUPC, A Maneira mais facil de montar um!</h5>
     <p class="card-text">Conte conosco para montar o teu melhor PC de forma fácil e rápida. Mais de 100 peças selecionadas a dedo visando qualidade e confiança.
@@ -51,16 +51,35 @@ include_once "includes/header.php";
   </div>
 </div>
 
-<hr/> <hr/>
+<hr/> 
+<hr/>
 
+</div>
+
+
+<div class="Texto1">
+
+<h2>O melhor assistente para você montar seu PC</h2>
+<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
 
 
 </div>
 
+<div class="button1">
+<button type="button" class="btn btn-success">Monte seu PC</button>
+</div>
+
+
+<br>
+
+
+<div class="footer1">
 
 <?php
 
 include_once "includes/footer.php";
 
 ?>
+
+</div>
 
