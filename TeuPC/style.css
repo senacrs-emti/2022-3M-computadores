@@ -65,8 +65,8 @@ footer p{
   .vertical-menu a {
     background-color: #eee; /* Grey background color */
     color: black; /* Black text color */
+    padding: 0;
     display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
     text-decoration: none; /* Remove underline from links */
   }
   
@@ -100,10 +100,6 @@ footer p{
 
   .card-text {
     color: #04AA6D;
-  }
-
-  .main{
-    height: 900px;
   }
 
   hr{
