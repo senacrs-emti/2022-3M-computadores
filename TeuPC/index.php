@@ -69,8 +69,18 @@ include_once "includes/header.php";
 <button type="button" class="btn btn-success">Monte seu PC</button>
 </div>
 
-
 <br>
+
+<div class="card2" style="width: 18rem;">
+  <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
+  <div class="card-body2">
+    <h5 class="card-title2">Título do card</h5>
+    <p class="card-text2">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="#" class="btn btn-primary2">Visitar</a>
+  </div>
+</div>
+
+
 
 
 <div class="footer1">
