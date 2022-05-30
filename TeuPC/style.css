@@ -1,6 +1,10 @@
 *{
     background-color: rgb(233, 243, 255) smoke;
 }
+
+body {
+  background-color: rgb(36, 36, 36);
+}
 header{
     width: auto;
     flex: auto;
@@ -103,11 +107,15 @@ footer p{
   }
 
   .card-text {
-    color: #04AA6D;
+    color: #078f0e;
   }
 
   .main{
     height: 600px;
+  }
+
+  .btn-primary {
+    background-color: #1abd3d;;
   }
 
   hr{
@@ -122,11 +130,16 @@ footer p{
 
    .Texto1 {
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     margin-top: -300px;
+     margin-top: -30px;
      word-wrap: normal;
      width: 85%;
      margin-left: 30px;
      font-size: large;
+     color: #fff;
+   }
+
+   .btn-success {
+     background-color: #1abd3d;
    }
 
 
@@ -143,15 +156,22 @@ footer p{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    background-color:#333;
     text-align: left;
+    color:#fff;
+    margin-top: -40px;
+    margin-left: 20px;
+    width: 100%;
+    border-radius: 10px;
+
   }
 
   .btn-primary2 {
    color: #fff;
-   background-color: #007bff;
+   background-color: #1abd3d;
    border-color: #007bff;
-  }
+   margin-top: -15px;
+   }
 
   .btn {
    display: inline-block;
@@ -169,7 +189,7 @@ footer p{
   }
 
   .card2 {
-    display: block;
+    display: inline-block;
     word-wrap: break-word;
   }
 
@@ -179,7 +199,20 @@ footer p{
    margin-block-end: 1em;
    margin-inline-start: 0px;
    margin-inline-end: 0px;
+   margin-top: -25px;
   }
+
+  .card-text2-preco {
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: -10px;
+    color: #1abd3d;
+    font-size: 25px;
+  } 
 
   .card-title2 {
    display: block;
@@ -190,10 +223,14 @@ footer p{
   }
 
   .card-img-top2 {
-    height: 180px;
+    height: 240px;
     width: 100%;
     display: block;
-    margin-top: 70px;
+    margin-top: 50px;
+    padding: 5px;
+    background-color:#333;
+    margin-left: 20px;
+    border-radius: 10px;
   }
 
 /* FIM PRODUTOS HOME STYLE */

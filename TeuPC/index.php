@@ -74,12 +74,47 @@ include_once "includes/header.php";
 <div class="card2" style="width: 18rem;">
   <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
   <div class="card-body2">
-    <h5 class="card-title2">Título do card</h5>
-    <p class="card-text2">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-    <a href="#" class="btn btn-primary2">Visitar</a>
+    <h5 class="card-title2">Nome do produto </h5>
+    <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
+    <p class="card-text2-preco">R$ 1500</p>
+    <a href="#" class="btn btn-primary2">Comprar</a>
+
   </div>
 </div>
 
+
+<div class="card2" style="width: 18rem;">
+  <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
+  <div class="card-body2">
+    <h5 class="card-title2">Nome do produto </h5>
+    <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
+    <p class="card-text2-preco">R$ 1500</p>
+    <a href="#" class="btn btn-primary2">Comprar</a>
+
+  </div>
+</div>
+
+<div class="card2" style="width: 18rem;">
+  <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
+  <div class="card-body2">
+    <h5 class="card-title2">Nome do produto </h5>
+    <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
+    <p class="card-text2-preco">R$ 1500</p>
+    <a href="#" class="btn btn-primary2">Comprar</a>
+
+  </div>
+</div>
+
+<div class="card2" style="width: 18rem;">
+  <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
+  <div class="card-body2">
+    <h5 class="card-title2">Nome do produto </h5>
+    <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
+    <p class="card-text2-preco">R$ 1500</p>
+    <a href="#" class="btn btn-primary2">Comprar</a>
+
+  </div>
+</div>
 
 
 
