@@ -10,6 +10,7 @@ header{
     flex: auto;
     height: auto;    
 }
+
 img{
     width: 800px;
     height:500px;
@@ -17,11 +18,13 @@ img{
     margin-right: auto;
     display: block;
 }
+
 h4{
     width: 1000px; 
     margin-left: auto;
     margin-right: auto;
 }
+
 footer p{
     font-size: 20px;
 }
@@ -100,15 +103,15 @@ footer p{
 
   .card-body {
     background-color: #02020b; 
-    margin-top: -25px;
-}
+    margin-top: -49px;
+  }
 
   .card-text {
     color: #078f0e;
   }
 
   .main{
-    height: 900px;
+    height: 600px;
   }
 
   .btn-primary {
@@ -143,3 +146,91 @@ footer p{
    .button1 {
      margin-left: 30px;
    }
+
+   /* PRODUTOS HOME */
+   
+   .card-body2 {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color:#333;
+    text-align: left;
+    color:#fff;
+    margin-top: -40px;
+    margin-left: 20px;
+    width: 100%;
+    border-radius: 10px;
+
+  }
+
+  .btn-primary2 {
+   color: #fff;
+   background-color: #1abd3d;
+   border-color: #007bff;
+   margin-top: -15px;
+   }
+
+  .btn {
+   display: inline-block;
+   font-weight: 400;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   user-select: none;
+   border: 1px solid transparent;
+   padding: 0.375rem 0.75rem;
+   font-size: 1rem;
+   line-height: 1.5;
+   border-radius: 0.25rem;
+   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .card2 {
+    display: inline-block;
+    word-wrap: break-word;
+  }
+
+  .card-text2 {
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   margin-top: -25px;
+  }
+
+  .card-text2-preco {
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: -10px;
+    color: #1abd3d;
+    font-size: 25px;
+  } 
+
+  .card-title2 {
+   display: block;
+   margin-block-start: 1.67em;
+   margin-block-end: 1.67em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+  }
+
+  .card-img-top2 {
+    height: 240px;
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    padding: 5px;
+    background-color:#333;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+
+/* FIM PRODUTOS HOME STYLE */
