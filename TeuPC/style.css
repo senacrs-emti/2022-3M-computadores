@@ -1,6 +1,10 @@
 *{
     background-color: rgb(233, 243, 255) smoke;
 }
+
+body {
+  background-color: rgb(36, 36, 36);
+}
 header{
     width: auto;
     flex: auto;
@@ -100,11 +104,15 @@ footer p{
 }
 
   .card-text {
-    color: #04AA6D;
+    color: #078f0e;
   }
 
   .main{
     height: 900px;
+  }
+
+  .btn-primary {
+    background-color: #1abd3d;;
   }
 
   hr{
@@ -119,11 +127,16 @@ footer p{
 
    .Texto1 {
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     margin-top: -300px;
+     margin-top: -30px;
      word-wrap: normal;
      width: 85%;
      margin-left: 30px;
      font-size: large;
+     color: #fff;
+   }
+
+   .btn-success {
+     background-color: #1abd3d;
    }
 
 

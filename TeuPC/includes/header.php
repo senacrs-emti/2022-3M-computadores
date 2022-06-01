@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">1BERT0</a>
+  <a href="#home" class="active">TEUPC</a>
   
   <a href="#Alguns">Assistente</a>
   <a href="#Instrumentos">Peças</a>
