@@ -73,12 +73,12 @@ include_once "includes/header.php";
 
 
 <!-- PRODUTOS CAROUSEL -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+<div id="demo2" class="carousel slide" data-bs-ride="carousel">
 
   <!-- The slideshow/carousel -->
-  <div class="carousel-inner1">
+  <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="card2" style="width: 18rem; margin-left: 25px;">
+      <div class="card card2" style="width: 18rem; margin-left: 25px;">
         <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -88,7 +88,7 @@ include_once "includes/header.php";
         </div>
       </div>
 
-      <div class="card2" style="width: 18rem; margin-left: 25px;">
+      <div class="card card2" style="width: 18rem; margin-left: 25px;">
         <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -98,7 +98,7 @@ include_once "includes/header.php";
         </div>
       </div>
 
-      <div class="card2" style="width: 18rem; margin-left: 25px;">
+      <div class="card card2" style="width: 18rem; margin-left: 25px;">
         <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -108,7 +108,7 @@ include_once "includes/header.php";
         </div>
       </div>
 
-      <div class="card2" style="width: 18rem; margin-left: 25px;">
+      <div class="card card2" style="width: 18rem; margin-left: 25px;">
         <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -121,7 +121,7 @@ include_once "includes/header.php";
   
 
     <div class="carousel-item">
-    <div class="card2" style="width: 18rem;">
+    <div class="card card2" style="width: 18rem;">
   <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
@@ -133,7 +133,7 @@ include_once "includes/header.php";
 </div>
 
 
-<div class="card2" style="width: 18rem; margin-left: 25px;">
+<div class="card card2" style="width: 18rem; margin-left: 25px;">
   <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
@@ -144,7 +144,7 @@ include_once "includes/header.php";
   </div>
 </div>
 
-<div class="card2" style="width: 18rem; margin-left: 25px;">
+<div class="card card2" style="width: 18rem; margin-left: 25px;">
   <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
@@ -155,7 +155,7 @@ include_once "includes/header.php";
   </div>
 </div>
 
-<div class="card2" style="width: 18rem; margin-left: 25px;">
+<div class="card card2" style="width: 18rem; margin-left: 25px;">
   <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
@@ -170,10 +170,10 @@ include_once "includes/header.php";
   </div>
 
   <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <button class="carousel-control-prev prev2" type="button" data-bs-target="#demo2" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
-  <button class="carousel-control-next1" type="button" data-bs-target="#demo" data-bs-slide="next">
+  <button class="carousel-control-next next2" type="button" data-bs-target="#demo2" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
