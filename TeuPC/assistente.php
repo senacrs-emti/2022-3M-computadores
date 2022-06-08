@@ -10,13 +10,12 @@ include_once "includes/header.php";
     <h3>Qual processador?</h3>
 <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked> Intel </input>
+    <input type="radio" name="options" id="intel" autocomplete="off" checked> Intel </input>
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" name="options" id="option2" autocomplete="off"> AMD </input>
+    <input type="radio" name="options" id="amd" autocomplete="off"> AMD </input>
   </label>
 <center>
-s
 </div>
 </div>
 
@@ -30,3 +29,5 @@ include_once "includes/footer.php";
 ?>
 
 </div>
+
+
