@@ -2,8 +2,6 @@
 include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
-<div class= "main"> 
-<div class="row">
 
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <button type="button" class="btn btn-secondary">1</button>
@@ -20,8 +18,7 @@ include_once "includes/header.php";
   </div>
 </div>
 
-</div>
-</div>
+
 
 
 
