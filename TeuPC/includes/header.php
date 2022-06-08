@@ -7,7 +7,7 @@
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">TEUPC</a>
   
-  <a href="#botoes.php">Assistente</a>
+  <a href="botoes.php">Assistente</a>
   <a href="#Instrumentos">Peças</a>
   <a href="#Instrumentos">Monte seu PC</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
