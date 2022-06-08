@@ -169,8 +169,8 @@
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); margin-top: 250px">
-    © 2020 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    © 2022 Copyright:
+    <a class="text-white">TEU PC</a>
   </div>
   <!-- Copyright -->
 </footer>
