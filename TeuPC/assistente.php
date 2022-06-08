@@ -61,9 +61,9 @@ include_once "includes/header.php";
     <h3>Qual seria o preço desejado?</h3>
 <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
+  <button type="button" class="btn btn-secondary">3mil</button>
+  <button type="button" class="btn btn-secondary">5mil</button>
+  <button type="button" class="btn btn-secondary">7mil</button>
 </div>
   </div>
 
