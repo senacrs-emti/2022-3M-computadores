@@ -4,7 +4,6 @@ include_once "includes/header.php";
 ?>
 
 
-
 <center>
     <h1 style>Vamos começar, nos diga como você quer seu computador</h1>
     <br>
