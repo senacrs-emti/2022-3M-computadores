@@ -112,6 +112,7 @@ footer p{
 
   .main{
     height: 600px;
+    color: #eee;
   }
 
   .btn-primary {
@@ -258,4 +259,8 @@ footer p{
 
 .bg-dark {
   background-color:revert!important;
+}
+
+h1{
+  color: #eee;
 }
