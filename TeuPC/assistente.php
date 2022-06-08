@@ -3,6 +3,8 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 
+<br>
+<br>
 
 <center>
     <h1 style>Vamos começar, nos diga como você quer seu computador</h1>
@@ -17,14 +19,10 @@ include_once "includes/header.php";
     <input type="checkbox" class="radio" value="1" name="fooby[1][]" />AMD</label>
 </div>
   </label>
-<center>
 </div>
 </div>
 
 <br>
-
-<center>
-
     <br>
     <h3>Placa de vídeo dedicada?</h3>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -40,8 +38,6 @@ include_once "includes/header.php";
 </div>
 
 <br>
-
-
     <br>
     <h3>Como seria o pagamento?</h3>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -74,6 +70,7 @@ include_once "includes/header.php";
 </div>
 </center>
 
+
 <div class="footer1">
 
 <?php
@@ -83,5 +80,6 @@ include_once "includes/footer.php";
 ?>
 
 </div>
+
 
 
