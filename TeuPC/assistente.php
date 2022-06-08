@@ -31,9 +31,9 @@ include_once "includes/header.php";
   <label class="btn btn-secondary active">
   <div>
   <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Sim</label>
+    <input type="checkbox" class="radio" value="1" name="fooby[2][]" />Sim</label>
   <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Não</label>
+    <input type="checkbox" class="radio" value="1" name="fooby[2][]" />Não</label>
 </div>
   </label>
 </div>
@@ -48,9 +48,9 @@ include_once "includes/header.php";
   <label class="btn btn-secondary active">
   <div>
   <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[2][]" />A prazo</label>
+    <input type="checkbox" class="radio" value="1" name="fooby[3][]" />A prazo</label>
   <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[2][]" />Á vista</label>
+    <input type="checkbox" class="radio" value="1" name="fooby[3][]" />Á vista</label>
 </div>
   </label>
 </div>
@@ -63,16 +63,17 @@ include_once "includes/header.php";
   <label class="btn btn-secondary active">
   <div>
   <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[3][]" />3mil</label>
+    <input type="checkbox" class="radio" value="1" name="fooby[4][]" />3mil</label>
   <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[3][]" />5mil</label>
+    <input type="checkbox" class="radio" value="1" name="fooby[4][]" />5mil</label>
   <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[3][]" />7mil</label>
+    <input type="checkbox" class="radio" value="1" name="fooby[4][]" />7mil</label>
 </div>
   </label>
 </div>
 </div>
 </center>
+
 <div class="footer1">
 
 <?php
