@@ -181,7 +181,7 @@ include_once "includes/header.php";
 
 
 
-<div class="footer1">
+<div class="footer">
 
 <?php
 
