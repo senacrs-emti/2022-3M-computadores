@@ -7,8 +7,8 @@ include_once "includes/header.php";
 <?php
 
 
-$sql = "SELECT * FROM cooler";
-         
+$sql = "SELECT * FROM cooler, fonte, gabinete, hd, notebook, pcpronto, placamae, processador, ssd, video";
+
 
 
 $resultado = mysqli_query( $conn , $sql);
