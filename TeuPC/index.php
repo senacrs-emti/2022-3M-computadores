@@ -4,17 +4,6 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 
-<?php
-
-
-$sql = "SELECT * FROM teupc";
-
-
-
-$resultado = mysqli_query( $conn , $sql);
-?>
-
-
 <div class= "main"> 
 <div class="row">  
 <!-- Carousel -->
