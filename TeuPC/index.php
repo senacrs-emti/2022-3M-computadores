@@ -91,8 +91,18 @@ $resultado = mysqli_query( $conn , $sql);
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="card card2" style="width: 18rem;">
+      <div class="card card2" style="width: 18rem; margin-left: -5px;">
         <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
+        <div class="card-body2">
+          <h5 class="card-title2">Nome do produto </h5>
+          <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
+          <p class="card-text2-preco">R$ 1500</p>
+          <a href="#" class="btn btn-primary2">Comprar</a>
+        </div>
+      </div>
+
+      <div class="card card2" style="width: 18rem; margin-left: 15px;">
+        <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
           <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
@@ -111,17 +121,7 @@ $resultado = mysqli_query( $conn , $sql);
         </div>
       </div>
 
-      <div class="card card2" style="width: 18rem; margin-left: 25px;">
-        <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
-        <div class="card-body2">
-          <h5 class="card-title2">Nome do produto </h5>
-          <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
-          <p class="card-text2-preco">R$ 1500</p>
-          <a href="#" class="btn btn-primary2">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card card2" style="width: 18rem; margin-left: 15px;">
+      <div class="card card2" style="width: 18rem; margin-left: 20px;">
         <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -138,7 +138,7 @@ $resultado = mysqli_query( $conn , $sql);
 
 
     <div class="carousel-item">
-    <div class="card card2" style="width: 18rem; margin-left: 15px;">
+    <div class="card card2" style="width: 18rem; margin-left: -5px;">
   <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
