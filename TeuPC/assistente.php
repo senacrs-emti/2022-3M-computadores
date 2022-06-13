@@ -70,6 +70,13 @@ include_once "includes/header.php";
   </label>
 </div>
 </div>
+
+<div class="has-text-centered">
+  <button class="button is-success is-medium mt-5">
+    <span class="has-text-weight-bold">Montar TEU PC!</span>
+  </button>
+</div>
+
 </center>
 
 
