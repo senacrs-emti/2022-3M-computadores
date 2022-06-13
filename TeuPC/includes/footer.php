@@ -2,6 +2,9 @@
 <footer class="bg-dark text-center text-white" style="margin-top:50px">
   <!-- Grid container -->
   <div class="container p-4">
+  <p class="pt-2">
+  <strong>Fique atualizado</strong>
+  </p>
     <!-- Section: Social media -->
     <section class="mb-4">
     <!-- Facebook -->
@@ -37,14 +40,14 @@
     <!-- Section: Social media -->
 
     <!-- Section: Form -->
-    <section class="">
+    <section class="" style="display: center;">
       <form action="">
         <!--Grid row-->
         <div class="row d-flex justify-content-center">
           <!--Grid column-->
           <div class="col-auto">
             <p class="pt-2">
-              <strong>Sign up for our newsletter</strong>
+              <strong>Fique atualizado</strong>
             </p>
           </div>
           <!--Grid column-->
@@ -54,7 +57,7 @@
             <!-- Email input -->
             <div class="form-outline form-white mb-4">
               <input type="email" id="form5Example21" class="form-control" />
-              <label class="form-label" for="form5Example21">Email address</label>
+              <label class="form-label" for="form5Example21">Email</label>
             </div>
           </div>
           <!--Grid column-->
@@ -63,7 +66,7 @@
           <div class="col-auto">
             <!-- Submit button -->
             <button type="submit" class="btn btn-outline-light mb-4">
-              Subscribe
+              Inscrever
             </button>
           </div>
           <!--Grid column-->

@@ -84,6 +84,11 @@ $resultado = mysqli_query( $conn , $sql);
 
 <br>
 
+<div class="texto2" style="margin-top: 0px;">
+
+<h2>Ofertas</h2>
+
+</div>
 
 <!-- PRODUTOS CAROUSEL -->
 <div id="demo2" class="carousel slide" data-bs-ride="carousel">
