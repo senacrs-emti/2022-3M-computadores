@@ -1,46 +1,46 @@
 <!-- Footer -->
 <footer class="bg-dark text-center text-white" style="margin-top:50px">
   <!-- Grid container -->
-  <div class="container p-4">
+  <div class="container p-4" style="display: inline-block">
   <p class="pt-2">
-  <strong>Fique atualizado</strong>
+  <strong>Siga-nos</strong>
   </p>
     <!-- Section: Social media -->
     <section class="mb-4">
     <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button" style="font-size: 2rem;">
         <i class="fa fa-facebook-f"></i>
       </a>
 
       <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button" style="font-size: 2rem;">
         <i class="fa fa-twitter"></i>
       </a>
 
       <!-- Google -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button" style="font-size: 2rem;">
         <i class="fa fa-google"></i>
       </a>
 
       <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button" style="font-size: 2rem;">
         <i class="fa fa-instagram"></i>
       </a>
 
       <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" role="button" style="font-size: 2rem;">
         <i class="fa fa-linkedin-in"></i>
       </a>
 
       <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/" role="button" style="font-size: 2rem;">
         <i class="fa fa-github"></i>
       </a>
     </section>
     <!-- Section: Social media -->
 
     <!-- Section: Form -->
-    <section class="" style="display: center;">
+    <section class="">
       <form action="">
         <!--Grid row-->
         <div class="row d-flex justify-content-center">
