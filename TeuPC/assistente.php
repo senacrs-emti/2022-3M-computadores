@@ -10,46 +10,40 @@ include_once "includes/header.php";
     <h1 style>Como você deseja o TEU PC ?</h1>
     <br>
     <h3>Qual processador?</h3>
-<div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-  <div>
-  <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Intel</label>
-  <label>
-    <input type="checkbox" class="radio2" value="1" name="fooby[1][]" />AMD</label>
-</div>
+    <input type="radio" name="intel" id="intel" autocomplete="off"> Intel
   </label>
-</div>
+  <label class="btn btn-secondary">
+    <input type="radio" name="amd" id="amd" autocomplete="off"> AMD
+  </label>
 </div>
 
 <br>
     <br>
     <h3>Placa de vídeo dedicada?</h3>
+
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-  <div>
-  <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[2][]" />Sim</label>
-  <label>
-    <input type="checkbox" class="radio2" value="1" name="fooby[2][]" />Não</label>
-</div>
+    <input type="radio" name="sim" id="sim" autocomplete="off"> Sim
   </label>
-</div>
+  <label class="btn btn-secondary">
+    <input type="radio" name="nao" id="nao" autocomplete="off"> Não
+  </label>
 </div>
 
 <br>
     <br>
     <h3>Como seria o pagamento?</h3>
+
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-  <div>
-  <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[3][]" />A prazo</label>
-  <label>
-    <input type="checkbox" class="radio2" value="1" name="fooby[3][]" />Á vista</label>
-</div>
+    <input type="radio" name="prazo" id="prazo" autocomplete="off"> A Prazo
   </label>
-</div>
+  <label class="btn btn-secondary">
+    <input type="radio" name="vista" id="vista" autocomplete="off"> Á Vista
+  </label>
 </div>
 
 <br>
@@ -57,18 +51,17 @@ include_once "includes/header.php";
     <h3>Qual seria o preço desejado?</h3>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-  <div>
-  <label>
-    <input type="checkbox" class="radio" value="1" name="fooby[4][]" />3mil</label>
-  <label>
-    <input type="checkbox" class="radio2" value="1" name="fooby[4][]" />5mil</label>
-  <label>
-    <input type="checkbox" class="radio2" value="1" name="fooby[4][]" />7mil</label>
-    <label>
-    <input type="checkbox" class="radio2" value="1" name="fooby[4][]" />10mil+</label>
-</div>
+    <input type="radio" name="3mil" id="3mil" autocomplete="off"> 3mil
   </label>
-</div>
+  <label class="btn btn-secondary">
+    <input type="radio" name="5mil" id="5mil" autocomplete="off"> 5mil
+  </label>
+  <label class="btn btn-secondary active">
+    <input type="radio" name="7mil" id="7mil" autocomplete="off"> 7mil
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="10+" id="10+" autocomplete="off"> 10mil+
+  </label>
 </div>
 
 <div class="has-text-centered">
