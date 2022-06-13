@@ -3,6 +3,18 @@ include_once "includes/_db.php";
 include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
+
+<?php
+
+
+$sql = "SELECT * FROM cooler, fonte, gabinete, hd, notebook, pcpronto, placamae, processador, ssd, video";
+
+
+
+$resultado = mysqli_query( $conn , $sql);
+?>
+
+
 <div class= "main"> 
 <div class="row">  
 <!-- Carousel -->
