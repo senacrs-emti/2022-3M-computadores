@@ -7,7 +7,7 @@ include_once "includes/header.php";
 <?php
 
 
-$sql = "SELECT * FROM cooler, fonte, gabinete, hd, notebook, pcpronto, placamae, processador, ssd, video";
+$sql = "SELECT * FROM teupc";
 
 
 
