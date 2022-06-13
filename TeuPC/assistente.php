@@ -7,7 +7,7 @@ include_once "includes/header.php";
 <br>
 
 <center>
-    <h1 style>Vamos começar, nos diga como você quer seu computador</h1>
+    <h1 style>Como você deseja o TEU PC ?</h1>
     <br>
     <h3>Qual processador?</h3>
 <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -64,6 +64,8 @@ include_once "includes/header.php";
     <input type="checkbox" class="radio" value="1" name="fooby[4][]" />5mil</label>
   <label>
     <input type="checkbox" class="radio" value="1" name="fooby[4][]" />7mil</label>
+    <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[4][]" />10mil+</label>
 </div>
   </label>
 </div>
