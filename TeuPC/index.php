@@ -4,7 +4,15 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 
+<?php
 
+
+$sql = "SELECT * FROM cooler";
+         
+
+
+$resultado = mysqli_query( $conn , $sql);
+?>
 
 
 <div class= "main"> 
