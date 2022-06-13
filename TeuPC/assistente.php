@@ -7,7 +7,7 @@ include_once "includes/header.php";
 <br>
 
 <center>
-    <h1 style>Vamos começar, nos diga como você quer seu computador</h1>
+    <h1 style>Como você deseja o TEU PC ?</h1>
     <br>
     <h3>Qual processador?</h3>
 <div class="btn-group btn-group-toggle" data-toggle="buttons">
