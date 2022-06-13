@@ -13,10 +13,10 @@ include_once "includes/header.php";
 
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked> Intel
+    <input type="radio" name="intel" id="intel" autocomplete="off"> Intel
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" name="options" id="option2" autocomplete="off"> AMD
+    <input type="radio" name="amd" id="amd" autocomplete="off"> AMD
   </label>
 </div>
 
@@ -26,10 +26,10 @@ include_once "includes/header.php";
 
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked> Sim
+    <input type="radio" name="sim" id="sim" autocomplete="off"> Sim
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" name="options" id="option2" autocomplete="off"> Não
+    <input type="radio" name="nao" id="nao" autocomplete="off"> Não
   </label>
 </div>
 
@@ -39,10 +39,10 @@ include_once "includes/header.php";
 
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked> A Prazo
+    <input type="radio" name="prazo" id="prazo" autocomplete="off"> A Prazo
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" name="options" id="option2" autocomplete="off"> Á Vista
+    <input type="radio" name="vista" id="vista" autocomplete="off"> Á Vista
   </label>
 </div>
 
@@ -51,16 +51,16 @@ include_once "includes/header.php";
     <h3>Qual seria o preço desejado?</h3>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked> 3mil
+    <input type="radio" name="3mil" id="3mil" autocomplete="off"> 3mil
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" name="options" id="option2" autocomplete="off"> 5mil
+    <input type="radio" name="5mil" id="5mil" autocomplete="off"> 5mil
   </label>
   <label class="btn btn-secondary active">
-    <input type="radio" name="options" id="option3" autocomplete="off"> 7mil
+    <input type="radio" name="7mil" id="7mil" autocomplete="off"> 7mil
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" name="options" id="option4" autocomplete="off"> 10mil+
+    <input type="radio" name="10+" id="10+" autocomplete="off"> 10mil+
   </label>
 </div>
 
