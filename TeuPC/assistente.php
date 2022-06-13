@@ -64,6 +64,8 @@ include_once "includes/header.php";
     <input type="checkbox" class="radio" value="1" name="fooby[4][]" />5mil</label>
   <label>
     <input type="checkbox" class="radio" value="1" name="fooby[4][]" />7mil</label>
+    <label>
+    <input type="checkbox" class="radio" value="1" name="fooby[4][]" />10mil+</label>
 </div>
   </label>
 </div>
