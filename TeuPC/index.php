@@ -83,7 +83,7 @@ include_once "includes/header.php";
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="card card2" style="width: 18rem; margin-left: 25px;">
+      <div class="card card2" style="width: 18rem;">
         <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -93,7 +93,7 @@ include_once "includes/header.php";
         </div>
       </div>
 
-      <div class="card card2" style="width: 18rem; margin-left: 25px;">
+      <div class="card card2" style="width: 18rem; margin-left: 20px;">
         <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -113,7 +113,7 @@ include_once "includes/header.php";
         </div>
       </div>
 
-      <div class="card card2" style="width: 18rem; margin-left: 25px;">
+      <div class="card card2" style="width: 18rem; margin-left: 15px;">
         <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -124,9 +124,13 @@ include_once "includes/header.php";
       </div>
     </div>
   
+ 
+
+
+
 
     <div class="carousel-item">
-    <div class="card card2" style="width: 18rem;">
+    <div class="card card2" style="width: 18rem; margin-left: 15px;">
   <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
@@ -160,7 +164,7 @@ include_once "includes/header.php";
   </div>
 </div>
 
-<div class="card card2" style="width: 18rem; margin-left: 25px;">
+<div class="card card2" style="width: 18rem; margin-right: 10px;">
   <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
