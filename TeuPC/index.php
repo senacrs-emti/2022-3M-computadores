@@ -89,6 +89,11 @@ $resultado = mysqli_query( $conn , $sql);
 <div id="demo2" class="carousel slide" data-bs-ride="carousel">
 
   <!-- The slideshow/carousel -->
+<?php 
+foreach($teupc as $valor)
+
+?>
+
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="card card2" style="width: 18rem; margin-left: -5px;">
