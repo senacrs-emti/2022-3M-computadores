@@ -4,10 +4,9 @@
 
 <div class="topnav" id="myTopnav">
   <a href="index.php">TEUPC</a>
-  
   <a href="assistente.php">Assistente</a>
   <a href="produtos.php">PCs e Notebooks</a>
-  <a href="#Instrumentos">Monte Teu PC</a>
+  <a href="lista.php?pro=1">Monte Teu PC</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>

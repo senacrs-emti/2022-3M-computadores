@@ -5,7 +5,6 @@ include_once "includes/header.php";
 ?>
 
 <br>
-<br>
 
 <center>
     <h1 style>Como você deseja o TEU PC ?</h1>
@@ -71,15 +70,14 @@ include_once "includes/header.php";
  <span class="has-text-weight-bold">Montar TEU PC!</span>
   </button></a>
 </div>
+
  </center>
 
 
 <div class="footer1">
 
 <?php
-
 include_once "includes/footer.php";
-
 ?>
 
 </div>
