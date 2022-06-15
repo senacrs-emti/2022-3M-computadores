@@ -55,10 +55,6 @@ foreach($teupc as $valor)
         </div>
       </div>
     </div>
-  
- 
-
-
 
 
     <div class="carousel-item">
