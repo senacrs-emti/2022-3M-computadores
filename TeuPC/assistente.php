@@ -66,9 +66,10 @@ include_once "includes/header.php";
 </div>
 
 <div class="has-text-centered">
-  <button class="button is-success is-medium mt-5" href="resultado-assistente.php">
-    <span class="has-text-weight-bold">Montar TEU PC!</span>
-  </button>
+  <button class="button is-success is-medium mt-5">
+  <a href="resultado-assistente.php"
+ <span class="has-text-weight-bold">Montar TEU PC!</span>
+  </button></a>
 </div>
  </center>
 
