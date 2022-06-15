@@ -96,14 +96,14 @@ footer p{
 /* card fixo no carousel */
   .card {
     float: inline-end;
-    margin-top: -48px;
     border: none;
+    margin-top: -48px;
 
 }
 
   .card-body {
     background-color: #02020b; 
-    margin-top: -48px;
+    margin-top: -12%;
   }
 
   .card-text {

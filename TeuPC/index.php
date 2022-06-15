@@ -4,6 +4,8 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 
+
+
 <div class= "main"> 
 <div class="row">  
 <!-- Carousel -->
@@ -18,7 +20,7 @@ include_once "includes/header.php";
   </div>
 
   <!-- The slideshow/carousel -->
-  <div class="carousel-inner">
+  <div class="carousel-inner" class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
     <div class="carousel-item active">
       <img src="imagens/coisalinda.jpg" alt="Los Angeles" class="d-block w-100">
     </div>
@@ -43,7 +45,7 @@ include_once "includes/header.php";
 <br>
 <br>
 
-<div class="card" style="height: 331px">
+<div class="card" style="height: 331px" class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
   <img class="card-img-top" src="imagens/card1.png" alt="Imagem de capa do card" style="height: 335px">
   <div class="card-body">
     <h5 class="card-title" style="color: white">TEUPC, A Maneira mais facil de montar um!</h5>
@@ -87,7 +89,7 @@ include_once "includes/header.php";
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="card card2" style="width: 18rem; margin-left: -5px;">
+      <div class="card card2" style="width: 18rem; margin-left: -5px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
         <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -97,7 +99,7 @@ include_once "includes/header.php";
         </div>
       </div>
 
-      <div class="card card2" style="width: 18rem; margin-left: 15px;">
+      <div class="card card2" style="width: 18rem; margin-left: 15px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
         <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -107,7 +109,7 @@ include_once "includes/header.php";
         </div>
       </div>
 
-      <div class="card card2" style="width: 18rem; margin-left: 20px;">
+      <div class="card card2" style="width: 18rem; margin-left: 20px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
         <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -117,7 +119,7 @@ include_once "includes/header.php";
         </div>
       </div>
 
-      <div class="card card2" style="width: 18rem; margin-left: 20px;">
+      <div class="card card2" style="width: 18rem; margin-left: 20px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
         <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
         <div class="card-body2">
           <h5 class="card-title2">Nome do produto </h5>
@@ -129,7 +131,7 @@ include_once "includes/header.php";
     </div>
 
     <div class="carousel-item">
-    <div class="card card2" style="width: 18rem; margin-left: -5px;">
+    <div class="card card2" style="width: 18rem; margin-left: -5px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
   <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
@@ -142,7 +144,7 @@ include_once "includes/header.php";
 
 
 <div class="card card2" style="width: 18rem; margin-left: 25px;">
-  <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
+  <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
     <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
@@ -153,7 +155,7 @@ include_once "includes/header.php";
 </div>
 
 <div class="card card2" style="width: 18rem; margin-left: 25px;">
-  <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card">
+  <img class="card-img-top2" src="imagens/produto1.jpg" alt="Imagem de capa do card" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
     <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
@@ -164,7 +166,7 @@ include_once "includes/header.php";
 </div>
 
 <div class="card card2" style="width: 18rem; margin-right: 10px;">
-  <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
+  <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
   <div class="card-body2">
     <h5 class="card-title2">Nome do produto </h5>
     <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
