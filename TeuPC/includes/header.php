@@ -6,7 +6,7 @@
   <a href="index.php">TEUPC</a>
   
   <a href="assistente.php">Assistente</a>
-  <a href="#Instrumentos">Peças</a>
+  <a href="produtos.php">PCs e Notebooks</a>
   <a href="#Instrumentos">Monte seu PC</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
