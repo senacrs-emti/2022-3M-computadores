@@ -1,12 +1,12 @@
 <!-- Footer -->
-<footer class="bg-dark text-center text-white" style="margin-top:50px">
+<footer class="bg-dark text-center text-white" style="margin-top:50px; justify-content:center;">
   <!-- Grid container -->
   <div class="container p-4" style="display: inline-block">
   <p class="pt-2">
   <strong>Siga-nos</strong>
   </p>
     <!-- Section: Social media -->
-    <section class="mb-4">
+    <section class="mb-4" style="justify-content:center;">
     <!-- Facebook -->
       <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button" style="font-size: 2rem;">
         <i class="fa fa-facebook-f"></i>
@@ -29,7 +29,7 @@
 
       <!-- Linkedin -->
       <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" role="button" style="font-size: 2rem;">
-        <i class="fa fa-linkedin-in"></i>
+        <i class="fa fa-linkedin"></i>
       </a>
 
       <!-- Github -->
@@ -180,6 +180,6 @@
 <!-- Footer -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+</center>
 </body>
    </html>
