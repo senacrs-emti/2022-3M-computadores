@@ -73,7 +73,7 @@ include_once "includes/header.php";
 
 <br>
 
-<div class="texto2" style="margin-top: 0px;">
+<div class="Texto1" style="margin-top: 0px;">
 
 <h2>Ofertas</h2>
 
@@ -83,10 +83,7 @@ include_once "includes/header.php";
 <div id="demo2" class="carousel slide" data-bs-ride="carousel">
 
   <!-- The slideshow/carousel -->
-<?php 
-foreach($teupc as $valor)
 
-?>
 
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -130,11 +127,6 @@ foreach($teupc as $valor)
         </div>
       </div>
     </div>
-  
- 
-
-
-
 
     <div class="carousel-item">
     <div class="card card2" style="width: 18rem; margin-left: -5px;">
