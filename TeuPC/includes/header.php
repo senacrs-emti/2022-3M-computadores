@@ -7,7 +7,7 @@
   
   <a href="assistente.php">Assistente</a>
   <a href="produtos.php">PCs e Notebooks</a>
-  <a href="#Instrumentos">Monte Teu PC</a>
+  <a href="resultadoassistente.php">Monte Teu PC</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
