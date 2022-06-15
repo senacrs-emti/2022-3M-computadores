@@ -49,7 +49,7 @@ include_once "includes/header.php";
     <h5 class="card-title" style="color: white">TEUPC, A Maneira mais facil de montar um!</h5>
     <p class="card-text">Conte conosco para montar o teu melhor PC de forma fácil e rápida. Mais de 100 peças selecionadas a dedo visando qualidade e confiança.
     </p>
-    <a href="#" class="btn btn-primary">Monte o TEU!</a>
+    <a href="assistente.php" class="btn btn-primary">Teu Assistente!</a>
   </div>
 </div>
 
@@ -68,7 +68,7 @@ include_once "includes/header.php";
 </div>
 
 <div class="button1">
-<button type="button" class="btn btn-success">Monte seu PC</button>
+<a href="resultado-assistente.php" class="btn btn-primary">Monte Teu Pc</a>
 </div>
 
 <br>
