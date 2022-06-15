@@ -68,7 +68,7 @@ include_once "includes/header.php";
 </div>
 
 <div class="button1">
-<button type="button" class="btn btn-success">Monte seu PC</button>
+<button type="button" class="btn btn-success">Monte teu PC</button>
 </div>
 
 <br>
