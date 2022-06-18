@@ -101,8 +101,9 @@ $resultado = mysqli_query($conn, $sql);
        echo '<img class="card-img-top2"src="imagens/'.$row['Imagem'].'" alt="Imagem de capa do card">';
        echo '<div class="card-body2">';
        echo  '<h5 class="card-title2">'.$row['Nome'].'</h5>';
-       echo   '<p class="card-text2">'.$row['DescG'].'</p>
-          <p class="card-text2-preco">R$'.$row['Preco'].'</p>';
+       echo   '<p class="card-text2">'.$row['CPU'].'</p>
+            <p class="card-text2">'.$row['PlacaVD'].'</p>
+            <p class="card-text2-preco">R$'.$row['Preco'].'</p>';
           $pcs++; 
          }
           ?>
