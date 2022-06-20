@@ -55,12 +55,6 @@ $resultado = mysqli_query($conn, $sql);
         
 
       </div>
-      <button class="carousel-control-prev prev2" type="button" data-bs-target="#demo2" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next next2" type="button" data-bs-target="#demo2" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
     </div>
 
   </div>
