@@ -63,9 +63,9 @@ include_once "includes/header.php";
 
 <div class="Texto1">
 
-<h2>O melhor assistente para você montar seu PC</h2>
-<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-
+<h2>O melhor assistente para você montar teu PC</h2>
+<p>É possível fazer qualquer combinação, nossa ferramenta mostrará quais são os erros de compatibilidade dentre o que foi selecionado — montar PC nunca foi tão fácil.</p>
+<p>Não somos exclusivos de nenhuma loja, nós agregamos os preços de várias lojas brasileiras e mostramos os melhores preços do mercado.</p>
 
 </div>
 
