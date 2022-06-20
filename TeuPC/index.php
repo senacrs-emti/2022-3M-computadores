@@ -104,10 +104,11 @@ $resultado = mysqli_query($conn, $sql);
        echo   '<p class="card-text2">'.$row['CPU'].'</p>
             <p class="card-text2">'.$row['PlacaVD'].'</p>
             <p class="card-text2-preco">R$'.$row['Preco'].'</p>';
+       echo     '<a href="'.$row['produtoID'].'" class="btn btn-primary2">Comprar</a>';
           $pcs++; 
          }
           ?>
-          <a href="#" class="btn btn-primary2">Comprar</a>
+          
         </div>
 
       </div>
