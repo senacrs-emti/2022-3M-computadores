@@ -112,7 +112,7 @@ $resultado = mysqli_query($conn, $sql);
        echo '</div>';
        echo '<br>';
        echo '<br>';
-       echo '</div>';x
+       echo '</div>';
           $fecha++;
           $pcs++; 
          };
