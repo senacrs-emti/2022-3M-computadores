@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Jun-2022 às 16:51
+-- Tempo de geração: 20-Jun-2022 às 17:26
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -53,7 +53,9 @@ CREATE TABLE `processadores` (
   `PecaID` int(11) NOT NULL,
   `CategoriaID` int(11) NOT NULL,
   `CpuID` int(11) NOT NULL,
-  `Nome` int(11) NOT NULL
+  `Nome` int(11) NOT NULL,
+  `Preco` float NOT NULL,
+  `Imagem` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
