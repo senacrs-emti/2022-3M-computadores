@@ -94,10 +94,11 @@ $resultado = mysqli_query($conn, $sql);
 
     <div class="carousel-item active">
 
-      <div class="card card2" style="width: 18rem; margin-left: -5px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+      
 <?php
          $pcs = 1;
          while($row = mysqli_fetch_array($resultado)){
+       echo '<div class="card card2" style="width: 18rem; margin-left: -5px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">';   
        echo '<img class="card-img-top2"src="imagens/'.$row['Imagem'].'" alt="Imagem de capa do card">';
        echo '<div class="card-body2">';
        echo  '<h5 class="card-title2">'.$row['Nome'].'</h5>';
