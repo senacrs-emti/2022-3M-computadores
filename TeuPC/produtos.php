@@ -4,9 +4,6 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 
-<!-- PRODUTOS CAROUSEL -->
-<div id="demo2" class="carousel slide" data-bs-ride="carousel">
-
   <!-- The slideshow/carousel -->
 <?php 
 foreach($teupc as $valor)
