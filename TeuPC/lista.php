@@ -5,21 +5,30 @@ include_once "includes/header.php";
 ?>
 
 <?php
-$sql =  "SELECT * FROM processador";
+
+$codigo= $_GET["cat"] ;
+
+$id = $_REQUEST;
+
+$sql = "SELECT * FROM processador WHERE categoriaID = $codigo";  
 
 $resultado = mysqli_query( $conn , $sql);
+
 ?>
 
 <center>
 <div class="Texto1" style="margin-top: 0px;">
 
 <?php 
-$tabTeuPC =2;
+$tabTabelas =1;
 if($resultado){
    while($row = mysqli_fetch_array($resultado)){
-    echo'<a href="lista.php?cat='.$row['categoriaID'].'>'.'</a>';
+    echo '<a href="lista.php?cat='.$row['categoriaID'].'" tabindex="'.$tabTabelas.'">';
+    echo '</a>'. '<h1 style="margin-left: 30px;">' . '<center>' . '<br>'.$row ['Nome'] . '<br><br>' . '</h1>' . '</center>';
+    $tabTabelas++;
 }
-}?>
+}
+?>
 
 </div>
 <center>
