@@ -6,8 +6,18 @@ include_once "includes/header.php";
 <?php
 $cpu = $_POST['CPU'];
 $preco = $_POST['preco'];
+$placa = $_POST['placa'];
 $npreco = '';
-
+if ($tempo = 'parcelado') {
+$parcela = 'Em até 12x sem juros';
+}else {
+$parcela = 'Em apanas 1x';
+}
+if ($placa = 'sem') {
+$plca = 'Sem placa de video integrada';
+}else {
+$plca = 'Com placa de video integrada';
+}
 if ($cpu == 'intel') {
 $nome = 'Computador com Intel';
 }else {
@@ -33,17 +43,20 @@ switch ($preco) {
 ?>
 <br>
        <br>
- <div class="card card2" style="width: 18rem; margin-left: -5px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3"> 
-       <img class="card-img-top2"src="imagens/nave.jpg" alt="Imagem de capa do card">
+       <center>
+ <div class="card card2" style="width: 500px; height:500px; margin-left: -5px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3"> 
+       <img class="card-img-top2" style="width: 500px; height:500px;" src="imagens/nave.jpg" alt="Imagem de capa do card">
      <div class="card-body2">
        <h5 class="card-title2"><?php echo $nome; ?></h5>
+       <p class="card-text2"><?php echo $plca; ?></p>
             <p class="card-text2-preco"><?php echo $npreco; ?></p>
-       <a href=".$row['produtoID']." class="btn btn-primary2">Comprar</a>
+            <p class="card-text2"><?php echo $parcela; ?></p>
+       <a href="https://www.pichau.com.br/" class="btn btn-primary2">Comprar</a>
        </div>
        <br>
        <br>
        </div>
-
+       <center>
 <?php
 include_once "includes/footer.php";
 ?>

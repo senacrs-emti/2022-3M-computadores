@@ -27,10 +27,10 @@ include_once "includes/header.php";
 
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="radio" name="sim" id="sim" autocomplete="off"> Sim
+    <input type="radio" name="placa" id="placa" value="com" autocomplete="off"> Sim
   </label>
   <label class="btn btn-secondary">
-    <input type="radio" name="nao" id="nao" autocomplete="off"> Não
+    <input type="radio" name="placa" id="placa" value="sem" autocomplete="off"> Não
   </label>
 </div>
 
@@ -51,15 +51,21 @@ include_once "includes/header.php";
     <input type="radio" name="preco" id="preco" value="11" autocomplete="off"> 11mil+
   </label>
 </div>
+<br>
+    <br>
+    <h3>Como seria o pagamento?</h3>
 
-<div class="has-text-centered">
-  <button class="button is-success is-medium mt-5">
-  <a href="resultado-assistente.php"
- <span class="has-text-weight-bold">Montar TEU PC!</span>
-  </button></a>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="tempo" id="tempo" value="parcelado" autocomplete="off"> A Prazo
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="tempo" id="tempo" value="direto" autocomplete="off"> Á Vista
+  </label>
 </div>
-
-        <input type="submit" value="Submit" name="submit">
+<br>
+<br>
+        <input class="btn btn-secondary" style="text-decoration: green;" type="submit" value="ENVIAR" name="ENVIAR">
 
 </center>
 <?php
