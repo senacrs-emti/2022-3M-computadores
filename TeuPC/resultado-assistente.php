@@ -15,16 +15,16 @@ $nome = 'Computador com AMD';
 }
 switch ($preco) {
     case 4:
-        $npreco = 'R$4.000,0';
+        $npreco = 'R$4.000,00';
       break;
     case 6:
-        $npreco = 'R$6.000,0';
+        $npreco = 'R$6.000,00';
       break;
     case 8:
-        $npreco = 'R$8.000,0';
+        $npreco = 'R$8.000,00';
       break;
     case 11:
-        $npreco = 'R$11.000,0';
+        $npreco = 'R$11.000,00';
       break;
 }
 
