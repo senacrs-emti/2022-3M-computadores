@@ -79,6 +79,10 @@ include_once "includes/header.php";
 
 </div>
 
+<?php
+$sql = "SELECT * FROM pcpronto";    
+$resultado = mysqli_query($conn, $sql);
+?>        
 <!-- PRODUTOS CAROUSEL -->
 <div id="demo2" class="carousel slide" data-bs-ride="carousel">
 
@@ -90,7 +94,7 @@ include_once "includes/header.php";
       <div class="card card2" style="width: 18rem; margin-left: -5px;">
         <img class="card-img-top2" src="imagens/card1.png" alt="Imagem de capa do card">
         <div class="card-body2">
-          <h5 class="card-title2">Nome do produto </h5>
+          <h5 class="card-title2">Nome do produto</h5>
           <p class="card-text2">Descrição e informações detalhadas do produto e estou enchendo esse texto para se ter uma ideia de como ficaria</p>
           <p class="card-text2-preco">R$ 1500</p>
           <a href="#" class="btn btn-primary2">Comprar</a>
