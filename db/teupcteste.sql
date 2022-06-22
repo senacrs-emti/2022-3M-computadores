@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21-Jun-2022 às 22:32
--- Versão do servidor: 10.4.17-MariaDB
--- versão do PHP: 7.3.27
+-- Tempo de geração: 22-Jun-2022 às 02:29
+-- Versão do servidor: 10.4.24-MariaDB
+-- versão do PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -164,8 +164,20 @@ CREATE TABLE `pecascampos` (
   `CampoID` int(11) NOT NULL,
   `CategoriaID` int(11) NOT NULL,
   `PecaID` int(11) NOT NULL,
-  `DadoCampo` varchar(100) NOT NULL
+  `DadoCampo` varchar(100) NOT NULL,
+  `Descricao` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `pecascampos`
+--
+
+INSERT INTO `pecascampos` (`PecaCampoID`, `CampoID`, `CategoriaID`, `PecaID`, `DadoCampo`, `Descricao`) VALUES
+(1, 1, 1, 1, '2 ', 'CPU ID '),
+(2, 2, 1, 1, '3.7 GHz', 'Frequencia '),
+(3, 3, 1, 1, '6 ', 'Núcleos'),
+(4, 4, 1, 1, 'AM4', 'Socket'),
+(5, 6, 1, 1, '65 w ', 'Consumo ');
 
 --
 -- Índices para tabelas despejadas
@@ -226,7 +238,7 @@ ALTER TABLE `pecas`
 -- AUTO_INCREMENT de tabela `pecascampos`
 --
 ALTER TABLE `pecascampos`
-  MODIFY `PecaCampoID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `PecaCampoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restrições para despejos de tabelas
@@ -242,7 +254,7 @@ ALTER TABLE `campos`
 -- Limitadores para a tabela `pecas`
 --
 ALTER TABLE `pecas`
-  ADD CONSTRAINT `Categoria` FOREIGN KEY (`CategoriaID`) REFERENCES `categorias` (`categoriaID`);
+  ADD CONSTRAINT `Categoria` FOREIGN KEY (`CategoriaID`) REFERENCES `categorias` (`CategoriaID`);
 
 --
 -- Limitadores para a tabela `pecascampos`
