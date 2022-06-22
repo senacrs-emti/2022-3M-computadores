@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="topnav" id="myTopnav">
-  <a href="index.php">TEUPC</a>
+  <a href="index.php">TEU PC</a>
   <a href="assistente.php">Assistente</a>
   <a href="produtos.php">PCs e Notebooks</a>
   <a href="lista.php?pro=1">Monte Teu PC</a>

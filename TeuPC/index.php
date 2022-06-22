@@ -55,8 +55,6 @@ include_once "includes/header.php";
   </div>
 </div>
 
-<hr/> 
-<hr/>
 
 </div>
 
