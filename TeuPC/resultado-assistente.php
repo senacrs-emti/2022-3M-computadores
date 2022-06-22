@@ -8,12 +8,12 @@ $cpu = $_POST['CPU'];
 $preco = $_POST['preco'];
 $placa = $_POST['placa'];
 $npreco = '';
-if ($tempo = 'parcelado') {
+if ($tempo == 'parcelado') {
 $parcela = 'Em até 12x sem juros';
 }else {
 $parcela = 'Em apanas 1x';
 }
-if ($placa = 'sem') {
+if ($placa == 'sem') {
 $plca = 'Sem placa de video integrada';
 }else {
 $plca = 'Com placa de video integrada';

@@ -65,7 +65,7 @@ include_once "includes/header.php";
 </div>
 <br>
 <br>
-        <input class="btn btn-secondary" style="text-decoration: green;" type="submit" value="ENVIAR" name="ENVIAR">
+        <input class="btn btn-secondary" style="text-decoration: green;" type="submit" value="Montar" name="Montar">
 
 </center>
 <?php
