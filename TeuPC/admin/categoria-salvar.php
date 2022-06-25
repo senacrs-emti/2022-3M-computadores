@@ -4,14 +4,14 @@ include_once '../includes/_db.php';
 include_once '_head.php';
  if (isset($_GET['id']) || !empty($_GET['id'])) {
     $id = $_GET['id'];
-    $sql = "SELECT * FROM categoria WHERE CategoriaID = ".$id;
+    $sql = "SELECT * FROM categorias WHERE CategoriaID = ".$id;
     $resultado = mysqli_query($conn,$sql);
     $dados = mysqli_fetch_array($resultado,MYSQLI_ASSOC);
- }else{
+ }
+ else{
      $id= '';
+     $dados['CategoriaID'] = '';
      $dados['Nome'] = '';
-     $dados['descricao'] = '';
-     $dados['imagem'] = '';
  }
 
  Include_once '_menu.php';

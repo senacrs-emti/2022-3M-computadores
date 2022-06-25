@@ -9,7 +9,7 @@
 include_once '../includes/_db.php';
 include_once '_head.php';
 
-$sql= "SELECT * FROM categoria";
+$sql= "SELECT * FROM categorias";
 $resultado = mysqli_query($conn,$sql);
 $total = mysqli_num_rows($resultado);
 

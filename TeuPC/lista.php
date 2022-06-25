@@ -11,19 +11,14 @@ $sql =  "SELECT * FROM categorias";
 $resultado = mysqli_query( $conn , $sql);
 ?>
 
-<center>
-<div class="Texto1" style="margin-top: 0px;">
-
 <?php 
-$tabTeuPC =2;
 if($resultado){
    while($row = mysqli_fetch_array($resultado)){
     echo'<a href="lista.php?cat='.$row['CategoriaID'].'>'.'</a>';
-}
-}?>
+  }}
+?>
 
-</div>
-<center>
+
 
 <div class="container"> 
 <table class="table" style="color: white">
@@ -41,9 +36,7 @@ if($resultado){
     </tr>
   </thead>
   <tbody>
-    <?php
-  
-    ?>
+
     <tr>
       <th scope="row">1</th>
       <td>Mark</td>
