@@ -6,7 +6,7 @@
   <a href="index.php">TEU PC</a>
   <a href="assistente.php">Assistente</a>
   <a href="produtos.php">PCs e Notebooks</a>
-  <a href="lista.php?pro=1">Peças</a>
+  <a href="lista.php?cat=1">Peças</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>

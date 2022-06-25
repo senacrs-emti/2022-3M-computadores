@@ -4,8 +4,9 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 
+
 <?php
-$sql =  "SELECT * FROM processador";
+$sql =  "SELECT * FROM categorias";
 
 $resultado = mysqli_query( $conn , $sql);
 ?>
@@ -17,7 +18,7 @@ $resultado = mysqli_query( $conn , $sql);
 $tabTeuPC =2;
 if($resultado){
    while($row = mysqli_fetch_array($resultado)){
-    echo'<a href="lista.php?cat='.$row['categoriaID'].'>'.'</a>';
+    echo'<a href="lista.php?cat='.$row['CategoriaID'].'>'.'</a>';
 }
 }?>
 
