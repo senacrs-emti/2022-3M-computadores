@@ -6,16 +6,26 @@ include_once "includes/header.php";
 
 
 <?php
-$sql =  "SELECT * FROM categorias";
+$codigo = $_GET["cat"];
+
+$sql = "SELECT * FROM categorias WHERE CategoriaID = $codigo";
+$pecas = "SELECT * FROM pecas WHERE CategoriaID = $codigo";
+$campos = "SELECT * FROM campos WHERE CategoriaID = $codigo";
 
 $resultado = mysqli_query( $conn , $sql);
+$resultado2 = mysqli_query($conn, $pecas);
+$resultado3 = mysqli_query($conn, $campos);
+
 ?>
 
-<?php 
+<?php
+$tabLista = 1 ; 
 if($resultado){
    while($row = mysqli_fetch_array($resultado)){
-    echo'<a href="lista.php?cat='.$row['CategoriaID'].'>'.'</a>';
-  }}
+    echo'<a href="lista.php?cat='.$row['CategoriaID'].'" tabindex="'.$tabLista.'">'.'</a>';
+    echo '<br>'.'<center>'.'<h2 style="color: white;">'.$row['Nome'].'</h2>'.'</center>';
+  }
+}
 ?>
 
 
@@ -23,32 +33,21 @@ if($resultado){
 <div class="container"> 
 <table class="table" style="color: white">
   <thead>
-    <tr>
-      <th scope="col"></th>
+  
+      <th scope="col">ID</th>
       <th scope="col">Nome</th>
-      <th scope="col">Marca</th>
       <th scope="col">Socket</th>
       <th scope="col">Frequencia</th>
       <th scope="col">Nucleos</th>
       <th scope="col">Consumo</th>
       <th scope="col">Preço</th>
       <th scope="col">Imagem</th>
-    </tr>
   </thead>
-  <tbody>
-
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
-  </tbody>
+  <?php $tablista = 1; 
+  if($resultado2) 
+    while($row =mysqli_fetch_array($resultado2)){ 
+      echo '</tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.$row['Nome'].'</td>'.'<td>Otto</td>'.'<td>@mdo</td>'.'<td>@mdo</td>'.'<td>@mdo</td>'.'<td>'.'R$'.$row['Preco'].'</td>'.'<td>'.$row['Imagem'].'</td>'.'</tr>'.'</tbody>';
+    }?>
 </table>
 </div>
 

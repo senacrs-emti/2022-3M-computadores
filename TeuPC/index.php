@@ -132,12 +132,8 @@ $resultado = mysqli_query($conn, $sql);
 
 
 <div class="footer">
-
 <?php
-
 include_once "includes/footer.php";
-
 ?>
-
 </div>
 

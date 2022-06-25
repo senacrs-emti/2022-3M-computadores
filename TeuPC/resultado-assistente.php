@@ -57,6 +57,8 @@ switch ($preco) {
        <br>
        </div>
        <center>
+
+<div class="footer">
 <?php
 include_once "includes/footer.php";
 ?>
