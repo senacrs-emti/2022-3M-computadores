@@ -15,8 +15,9 @@ $campos = "SELECT * FROM campos WHERE CategoriaID = $codigo";
 
 
 $resultado = mysqli_query( $conn , $sql);
-$resultado2 = mysqli_query($conn, $pecas);
-$resultado3 = mysqli_query($conn, $campos);
+$campos = mysqli_query($conn, $campos);
+$pecas = mysqli_query($conn, $pecas);
+
 
 ?>
 
@@ -35,8 +36,13 @@ if($resultado){
 <div class="container"> 
 <table class="table" style="color: white">
   <thead>
-    
-  
+
+  <?php
+      $tablista = 1; 
+      if($campos){
+        while($row = mysqli_fetch_array($campos))
+      }
+  ?>
       <th scope="col">ID</th>
       <th scope="col">Nome</th>
       <th scope="col">Socket</th>
@@ -46,11 +52,14 @@ if($resultado){
       <th scope="col">Preço</th>
       <th scope="col">Imagem</th>
   </thead>
-  <?php $tablista = 1; 
-  if($resultado2) 
-    while($row =mysqli_fetch_array($resultado2)){ 
+  <?php 
+  $tablista = 1; 
+  if($pecas){
+    while($row = mysqli_fetch_array($pecas)){ 
       echo '</tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.$row['Nome'].'</td>'.'<td>'.'</td>'.'<td>@mdo</td>'.'<td>@mdo</td>'.'<td>@mdo</td>'.'<td>'.'R$'.$row['Preco'].'</td>'.'<td>'.$row['Imagem'].'</td>'.'</tr>'.'</tbody>';
-    }?>
+    }
+  } 
+    ?>
 </table>
 </div>
 
