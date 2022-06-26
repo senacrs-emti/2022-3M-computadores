@@ -2,8 +2,8 @@
 //informacoes do servidort de banco de dados
 $db_host='localhost';
 $db_usuario='root';
-$db_senha='';
-$db_base='teupcfinal';
+$db_senha='123';
+$db_base='teupc';
 
 // conexao com o servidor de banco de dados
 
