@@ -68,7 +68,7 @@ include_once "includes/header.php";
 </div>
 
 <div class="button1">
-<a href="resultado-assistente.php" class="btn btn-primary">Monte Teu Pc</a>
+<a href="lista.php?cat=1" class="btn btn-primary">Monte Teu Pc</a>
 </div>
 
 <br>
