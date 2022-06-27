@@ -9,11 +9,6 @@ include_once "includes/header.php";
 
 $codigo = $_GET["cat"];
 
-$cat = "SELECT * FROM categorias WHERE CategoriaID = $codigo";
-
-$pecas = "SELECT * FROM pecas WHERE CategoriaID = $codigo";
-
-
 $sql="SELECT 
 p.PecaID,
 p.Imagem AS ImagemPeca,
@@ -34,7 +29,6 @@ ON cp.CampoID = pc.CampoID
 WHERE c.CategoriaID = $codigo";
 
 $resultado = mysqli_query( $conn , $sql);
-$resultado2 = mysqli_query( $conn , $pecas); 
 $row = mysqli_fetch_array($resultado);
 ?>
 
