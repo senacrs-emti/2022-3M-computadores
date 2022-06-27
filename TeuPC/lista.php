@@ -49,7 +49,7 @@ if($resultado){
   $tablista = 1; 
   if($pecas){
     while($row = mysqli_fetch_array($pecas)){ 
-      echo '</tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.$row['Nome'].'</td>'.'<td>'.'</td>'.'<td>@mdo</td>'.'<td>@mdo</td>'.'<td>@mdo</td>'.'<td>'.'R$ '.$row['Preco'].'</td>'.'<td>'.'<img style="height:100px; width:100px; background-image:none ;" src="imagens/'.$row['Imagem'].'".>'.'</td>'.'</tr>'.'</tbody>';
+      echo '</tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.$row['Nome'].'</td>'.'<td>'.'</td>'.'<td>@mdo</td>'.'<td>@mdo</td>'.'<td>@mdo</td>'.'<td>'.'R$ '.$row['Preco'].'</td>'.'<td>'.'<img style="height:60px; width:60px; background-image:none ;" src="imagens/'.$row['Imagem'].'".>'.'</td>'.'</tr>'.'</tbody>';
     }
   } 
     ?>
