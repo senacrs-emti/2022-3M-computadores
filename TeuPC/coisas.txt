@@ -72,3 +72,14 @@
        echo '<br>';
        echo '<br>';
        echo '</div>';
+
+
+
+         <?php
+      $tablista = 1; 
+      if($campos){
+        while($row = mysqli_fetch_array($campos)){
+          echo 
+        }
+      }
+  ?>

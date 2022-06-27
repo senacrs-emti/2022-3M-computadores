@@ -36,13 +36,6 @@ if($resultado){
 <div class="container"> 
 <table class="table" style="color: white">
   <thead>
-
-  <?php
-      $tablista = 1; 
-      if($campos){
-        while($row = mysqli_fetch_array($campos))
-      }
-  ?>
       <th scope="col">ID</th>
       <th scope="col">Nome</th>
       <th scope="col">Socket</th>
