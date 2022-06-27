@@ -117,6 +117,8 @@ footer p{
 
   .btn-primary {
     background-color: #1abd3d;;
+    margin-left: 125px;
+    margin-top: 28px;
   }
 
   hr{
@@ -195,6 +197,8 @@ footer p{
    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
 
+
+  
   .card2 {
     display: inline-block;
     width: 200px;

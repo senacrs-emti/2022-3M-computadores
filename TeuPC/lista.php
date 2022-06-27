@@ -11,7 +11,7 @@ if ($codigo == 0) {
 $sql = "SELECT * FROM categorias";
 $resultado = mysqli_query( $conn , $sql);
   while ($row = mysqli_fetch_array($resultado)) {
-    echo '<a href="lista.php?cat='.$row['CategoriaID'].'" class="btn btn-primary2">'.$row['Nome'].'</a>'; 
+    echo '<a href="lista.php?cat='.$row['CategoriaID'].'" class="btn btn-primary">'.$row['Nome'].'</a>'; 
   }}	else{
 $sql = "SELECT * FROM categorias WHERE CategoriaID = $codigo";
 $pecas = "SELECT * FROM pecas WHERE CategoriaID = $codigo";
