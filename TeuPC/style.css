@@ -42,7 +42,7 @@ footer p{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 21px;
     margin-left: 20px;
 }
   
@@ -109,6 +109,7 @@ footer p{
   .card-text {
     color: #078f0e;
   }
+
 
   .main{
     height: 600px;
@@ -305,7 +306,7 @@ h1,h3{
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 21px;
   border: none;
   outline: none;
   color: white;
@@ -338,6 +339,7 @@ h1,h3{
   text-decoration: none;
   display: block;
   text-align: left;
+  font-size: 18px;
 }
 
 /* Add a grey background color to dropdown links on hover */
