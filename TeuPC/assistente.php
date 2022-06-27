@@ -13,9 +13,9 @@ include_once "includes/header.php";
        <form method="post" action="resultado-assistente.php">
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="radio" name="CPU" id="CPU" value="intel" autocomplete="off"> Intel</label>
+    <input type="radio" name="CPU" id="CPU" value="1" autocomplete="off"> Intel</label>
   <label class="btn btn-secondary">
-    <input type="radio" name="CPU" id="CPU" value="amd" autocomplete="off"> AMD</label>
+    <input type="radio" name="CPU" id="CPU" value="2" autocomplete="off"> AMD</label>
 </div>
 
 <br>

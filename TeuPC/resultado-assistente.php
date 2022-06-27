@@ -4,6 +4,19 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 <?php
+$tipoc = $_POST['CPU'];
+$sql = "SELECT * FROM pecascamps WHERE CategoriaID = 1"
+$campos = mysqli_query( $conn , $sql);
+if ($campos) {
+  while($row = mysqli_fetch_array($resultado)){
+if ($row['Descricao'] == 'CpuID') {
+  if ($row['DadoCampo'] == $tipoc) {
+    # code...
+  }
+  # code...
+} 
+
+}
 $cpu = $_POST['CPU'];
 $preco = $_POST['preco'];
 $placa = $_POST['placa'];
