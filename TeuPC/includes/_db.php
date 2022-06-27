@@ -3,7 +3,7 @@
 $db_host='localhost';
 $db_usuario='root';
 $db_senha='';
-$db_base='teupcfinal';
+$db_base='teupc';
 
 // conexao com o servidor de banco de dados
 
