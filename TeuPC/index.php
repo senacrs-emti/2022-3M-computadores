@@ -68,7 +68,7 @@ include_once "includes/header.php";
 </div>
 
 <div class="button1">
-<a href="resultado-assistente.php" class="btn btn-primary">Monte Teu Pc</a>
+<a href="lista.php?cat=1" class="btn btn-primary">Monte Teu Pc</a>
 </div>
 
 <br>
@@ -80,19 +80,8 @@ include_once "includes/header.php";
 </div>
 <?php
 $sql = "SELECT * FROM pecas WHERE CategoriaID=1";
-
-
 $resultado = mysqli_query($conn, $sql);
 ?>        
-<!-- PRODUTOS CAROUSEL -->
-<div id="demo2" class="carousel slide" data-bs-ride="carousel">
-
-  <!-- The slideshow/carousel -->
-
-
-  <div class="carousel-inner">
-  <div class="carousel-item active">
-    
 
   
 <?php
@@ -104,9 +93,8 @@ $resultado = mysqli_query($conn, $sql);
        echo '<div class="card card2" style="width: 19rem; margin-left: -5px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">';   
        echo '<img class="card-img-top2"src="imagens/'.$row['Imagem'].'" alt="Imagem de capa do card">';
        echo '<div class="card-body2" style="height:250px;">';
-       echo  '<h5 class="card-title2">'.$row['Nome'].'</h5>';
-            '<p class="card-text2-preco">R$'.$row['Preco'].'</p>';
-       echo     '<a href="'.$row['Link'].'" class="btn btn-primary2">Comprar</a>';
+       echo '<h5 class="card-title2">'.$row['Nome'].'</h5>';
+       echo '<a href="'.$row['Link'].'" class="btn btn-primary2">Comprar</a>'.'<p>'.'<br>'.'R$ '.$row['Preco'].'</p>';
        echo '</div>';
        echo '<br>';
        echo '<br>';
@@ -116,20 +104,7 @@ $resultado = mysqli_query($conn, $sql);
          };
           ?>
           
-        
-
-      </div>
-      <button class="carousel-control-prev prev2" type="button" data-bs-target="#demo2" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next next2" type="button" data-bs-target="#demo2" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-    </div>
-
-  </div>
-
-
+      
 
 <div class="footer">
 <?php
