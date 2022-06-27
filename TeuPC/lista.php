@@ -11,9 +11,13 @@ $codigo = $_GET["cat"];
 
 $cat = "SELECT * FROM categorias WHERE CategoriaID = $codigo";
 
+$pecas = "SELECT * FROM pecas WHERE CategoriaID = $codigo";
+
 
 $sql="SELECT 
 p.PecaID,
+p.Imagem AS ImagemPeca,
+p.Preco AS PrecoPeca,
 p.Nome AS NomePeca,
 c.Nome AS NomeCategoria,
 cp.Nome AS NomeCampo,
@@ -30,7 +34,8 @@ ON cp.CampoID = pc.CampoID
 WHERE c.CategoriaID = $codigo";
 
 $resultado = mysqli_query( $conn , $sql);
-$row = mysqli_fetch_array($resultado)
+$resultado2 = mysqli_query( $conn , $pecas); 
+$row = mysqli_fetch_array($resultado);
 ?>
 
 <?php
@@ -38,9 +43,6 @@ $tabLista = 1 ;
 if($resultado = $codigo){
   echo '<br>'.'<center>'.'<h2 style="color: white;">'.$row['NomeCategoria'].'</h2>'.'</center>';
 }
-?>
-
-<?php 
 ?>
 
 <div class="container"> 
