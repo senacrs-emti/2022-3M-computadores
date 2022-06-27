@@ -7,7 +7,12 @@ include_once "includes/header.php";
 
 <?php
 $codigo = $_GET["cat"];
-
+if ($codigo == 0) {
+$sql = "SELECT * FROM categorias";
+$resultado = mysqli_query( $conn , $sql);
+  while ($row = mysqli_fetch_array($resultado)) {
+    echo '<a href="lista.php?cat='.$row['CategoriaID'].'" class="btn btn-primary2">'.$row['Nome'].'</a>'; 
+  }}	else{
 $sql = "SELECT * FROM categorias WHERE CategoriaID = $codigo";
 $pecas = "SELECT * FROM pecas WHERE CategoriaID = $codigo";
 $campos = "SELECT * FROM campos WHERE CategoriaID = $codigo";
@@ -18,15 +23,9 @@ $resultado = mysqli_query( $conn , $sql);
 $campos = mysqli_query($conn, $campos);
 $pecas = mysqli_query($conn, $pecas);
 
-if ($codigo == '') {
-  while ($row = mysqli_fetch_array($resultado)) {
-    echo '<a href="lista.php?cat='.$row['CategoriaID'].'" class="btn btn-primary2">'.$row['Nome'].'</a>'; 
-  }
 
-}else
-?>
 
-<?php
+
 $tabLista = 1 ; 
 if($resultado){
    while($row = mysqli_fetch_array($resultado)){
@@ -60,9 +59,8 @@ if($resultado){
     ?>
 </table>
 </div>
-
-<?php
-} ?>
+<?php } 
+?>
 
 <div class="footer">
 <?php
