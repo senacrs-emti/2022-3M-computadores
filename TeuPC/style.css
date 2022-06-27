@@ -103,7 +103,7 @@ footer p{
 
   .card-body {
     background-color: #02020b; 
-    margin-top: -12%;
+    height: 190px;
   }
 
   .card-text {
