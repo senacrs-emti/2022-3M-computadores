@@ -18,7 +18,12 @@ $resultado = mysqli_query( $conn , $sql);
 $campos = mysqli_query($conn, $campos);
 $pecas = mysqli_query($conn, $pecas);
 
+if ($codigo == '') {
+  while ($row = mysqli_fetch_array($resultado)) {
+    echo '<a href="lista.php?cat='.$row['CategoriaID'].'" class="btn btn-primary2">'.$row['Nome'].'</a>'; 
+  }
 
+}else
 ?>
 
 <?php
@@ -56,8 +61,8 @@ if($resultado){
 </table>
 </div>
 
-
-
+<?php
+} ?>
 
 <div class="footer">
 <?php
