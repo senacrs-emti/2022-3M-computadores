@@ -4,6 +4,29 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 
+<?php 
+$sql="SELECT 
+p.PecaID,
+p.Imagem AS ImagemPeca,
+p.Preco AS PrecoPeca,
+p.Nome AS NomePeca,
+c.Nome AS NomeCategoria,
+cp.Nome AS NomeCampo,
+pc.DadoCampo AS Descricao,
+p.Preco
+FROM `pecascampos` AS pc
+INNER JOIN pecas AS p
+ON pc.PecaID = p.PecaID
+INNER JOIN categorias AS c
+ON p.CategoriaID = c.CategoriaID
+AND pc.CategoriaID = c.CategoriaID
+INNER JOIN campos AS cp
+ON cp.CampoID = pc.CampoID";
+?>
+
+
+
+
 <br>
 <center>
 <h1 style>Como você deseja o TEU PC ?</h1>
