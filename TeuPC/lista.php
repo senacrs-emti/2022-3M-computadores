@@ -34,7 +34,7 @@ $row = mysqli_fetch_array($resultado);
 
 <?php
 $tabLista = 1 ; 
-if($resultado){
+if($resultado = $codigo){
   echo '<br>'.'<center>'.'<h2 style="color: white;">'.$row['NomeCategoria'].'</h2>'.'</center>';
 }
 ?>
