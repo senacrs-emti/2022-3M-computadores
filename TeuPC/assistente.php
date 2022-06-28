@@ -12,7 +12,7 @@ p.Preco AS PrecoPeca,
 p.Nome AS NomePeca,
 c.Nome AS NomeCategoria,
 cp.Nome AS NomeCampo,
-pc.DadoCampo AS Descricao,
+pc.DadoCampo AS Campo,
 p.Preco
 FROM `pecascampos` AS pc
 INNER JOIN pecas AS p
