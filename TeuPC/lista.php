@@ -54,12 +54,7 @@ if($codigo = $codigo){
       <th scope="col">Preço</th>
       <th scope="col">Imagem</th>
   </thead>
-
-</table>
-</div>
-
-
-<?php 
+  <?php 
   $tablista = 1; 
   if($codigo = $resultado){
     while($row = mysqli_fetch_array($resultado)){ 
@@ -67,13 +62,12 @@ if($codigo = $codigo){
     }
   } 
  ?>
-    
 </table>
 </div>
 
+    
 
-<div class="footer">
+
 <?php
 include_once "includes/footer.php";
 ?>
-</div>
