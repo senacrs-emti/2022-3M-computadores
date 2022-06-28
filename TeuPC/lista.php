@@ -34,8 +34,11 @@ $row = mysqli_fetch_array($resultado);
 
 <?php
 $tabLista = 1 ; 
-if($resultado = $codigo){
+if($codigo = $codigo){
   echo '<br>'.'<center>'.'<h2 style="color: white;">'.$row['NomeCategoria'].'</h2>'.'</center>';
+  while($row = mysqli_fetch_array($resultado)){
+
+  } 
 }
 ?>
 
@@ -56,6 +59,17 @@ if($resultado = $codigo){
 </div>
 
 
+<?php 
+  $tablista = 1; 
+  if($codigo = $resultado){
+    while($row = mysqli_fetch_array($resultado)){ 
+      echo '</tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.$row['NomePeca'].'</td>'.'<td>'.'</td>'.'<td>@mdo</td>'.'<td>@mdo</td>'.'<td>@mdo</td>'.'<td>'.'R$ '.$row['Preco'].'</td>'.'<td>'.'<img style="height:60px; width:60px; background-image:none ;" src="imagens/'.$row['ImagemPeca'].'".>'.'</td>'.'</tr>'.'</tbody>';
+    }
+  } 
+ ?>
+    
+</table>
+</div>
 
 
 <div class="footer">
