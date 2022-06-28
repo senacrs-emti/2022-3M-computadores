@@ -59,7 +59,8 @@ if($resultado){
     ?>
 </table>
 </div>
-<?php } 
+<?php 
+} 
 ?>
 
 <div class="footer">
