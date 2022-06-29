@@ -1,16 +1,9 @@
-<?php
-
- $senha = 'a';
-    $senha = $_GET['senha'];
-    switch ($senha) {
-        case 'salva':
-           echo '';
-            
-   
-include_once '../includes/_db.php';
+<?php   
+include_once '_valida.php';
+include_once '_db.php';
 include_once '_head.php';
 
-$sql= "SELECT * FROM usuario";
+$sql= "SELECT * FROM usuarios";
 $resultado = mysqli_query($conn,$sql);
 $total = mysqli_num_rows($resultado);
 
@@ -18,7 +11,7 @@ Include_once '_menu.php';
 ?>
 
     <main>
-        <h2>Administração dos Usuarios</h2>
+        <h2>Administração dos Usuário</h2>
 
         <a href="usuario-salvar.php">inserir</a>
         <hr>
@@ -35,7 +28,7 @@ Include_once '_menu.php';
             ?>
             <tr>
                 <td><?php echo $dado['UsuarioID']; ?></td>
-                <td><a href="usuario-salvar.php?acao=salvar&id=<?php echo $dado['UsuarioID']; ?>"><?php echo $dado['NomeCompleto']; ?></a></td>
+                <td><a href="usuario-salvar.php?acao=salvar&id=<?php echo $dado['UsuarioID']; ?>"><?php echo $dado['Nome']; ?></a></td>
                 <td><a href="usuario-processa.php?acao=excluir&id=<?php echo $dado['UsuarioID']; ?>">Excluir</a></td>
             </tr>
             <?php
@@ -51,12 +44,10 @@ Include_once '_menu.php';
             <tr>
                 <td colspan="3">Total de Registros: <?php echo $total;?></td>
             </tr>
-        </table>
+        </table>    
     </main>
 <?php
 Include_once '_footer.php';
-break;
-default:
-echo 'Senha incorreta';
-        }
+
+      
 ?>
