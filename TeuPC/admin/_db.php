@@ -14,6 +14,6 @@ if (!$conn) {
 
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "Conexao com o banco de dados OK";
+
 
 ?>
