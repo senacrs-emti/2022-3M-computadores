@@ -5,7 +5,6 @@ include_once "includes/header.php";
 ?>
 
 
-
 <div class= "main"> 
 <div class="row">  
 <!-- Carousel -->
