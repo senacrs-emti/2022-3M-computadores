@@ -22,7 +22,7 @@ switch ($acao) {
         if ($_FILES['foto']['size'] > 0){
             $uploaddir = '../imagens/';
             $extensao = pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION);
-            $nomearquivo = 'pecas-'.$_POST['imagem'].'-'.$id.'.'.$extensao;
+            $nomearquivo = 'pecas-'.$imagem.'-'.$id.'.'.$extensao;
             $uploadfile = $uploaddir . $nomearquivo;
             move_uploaded_file($_FILES['foto']['tmp_name'], $uploadfile);
         }else {
