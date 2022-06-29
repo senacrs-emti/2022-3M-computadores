@@ -20,7 +20,7 @@ include_once '_head.php';
  Include_once '_menu.php';
  ?>
     <main>
-        <h2>Administração dos Artigos</h2>
+        <h2>Administração das Peças</h2>
         <a href="pecas-lista.php">Listagem</a>
         <hr>
         <form action="pecas-processa.php" method="post" enctype="multipart/form-data">
@@ -28,12 +28,19 @@ include_once '_head.php';
             <input type="hidden" name="id" value="<?php echo $id; ?>"><br>
             <label for="nome">Nome:</label><br>
             <textarea id="nome" name="nome"><?php echo $dados['Nome']; ?></textarea><br>
-            <label for="preco">Subtítulo:</label><br>
+            <label for="preco">Preço:</label><br>
             <input type="text" id="preco" name="preco" value="<?php echo $dados['Preco']; ?>"><br>
             <label for="link">Link:</label><br>
             <textarea id="link" name="link"><?php echo $dados['Link']; ?></textarea><br>
             <label for="categorias">Categorias:</label><br>
-            <input type="text" id="categorias" name="categorias" value="<?php echo $dados['CategoriaID']; ?>"><br>
+            <select class="form-control" id="categorias" name="categorias">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      </select>
+      <br>
             <label for="imagem">Imagem:</label><br>
             <?php
             if ( !empty($dados['Imagem']) ) {
