@@ -103,12 +103,19 @@ footer p{
 
   .card-body {
     background-color: #02020b; 
-    margin-top: -12%;
+ 
   }
 
   .card-text {
     color: #078f0e;
+    font-size: clamp(12px, 12px + 1vw, 13px);
   }
+  @media screen and (min-width: 1260px) {
+    .card-text {
+      font-size: 16px;
+    }
+  }
+
 
   .main{
     height: 600px;
