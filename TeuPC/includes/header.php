@@ -8,10 +8,12 @@
   <a href="assistente.php">Assistente</a>
   <a href="produtos.php">PCs e Notebooks</a>
 
+
   <div class="dropdown">
     <button class="dropbtn">Peças
       <i class="fa fa-caret-down"></i>
     </button>
+
     <div class="dropdown-content">
       <a href="lista.php?cat=1">Processadores</a>
       <a href="lista.php?cat=2">Placa Mãe</a>
@@ -25,11 +27,11 @@
       <a href="lista.php?cat=10">Notebook</a>
       <a href="lista.php?cat=11">PC Montados</a>
     </div>
+  
   </div>
 
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-
-  </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+  
 </div>
 
 </header>
