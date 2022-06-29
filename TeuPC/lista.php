@@ -11,13 +11,13 @@ $codigo = $_GET["cat"];
 
 $sql="SELECT 
 p.PecaID,
+p.Preco,
 p.Imagem AS ImagemPeca,
 p.Preco AS PrecoPeca,
 p.Nome AS NomePeca,
 c.Nome AS NomeCategoria,
 cp.Nome AS NomeCampo,
-pc.DadoCampo AS Descricao,
-p.Preco
+pc.DadoCampo AS Descricao
 FROM `pecascampos` AS pc
 INNER JOIN pecas AS p
 ON pc.PecaID = p.PecaID
@@ -34,10 +34,10 @@ $resultado = mysqli_query( $conn , $sql);
 
 <?php
 $tabLista = 1 ; 
-if($resultado = $codigo){
-  echo '<br>'.'<center>'.'<h2 style="color: white;">'.$codigo['NomeCategoria'].'</h2>'.'</center>';
+if($resultado){
   while($row = mysqli_fetch_array($resultado)){
-    echo '</tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.$row['NomePeca'].'</td>'.'<td>'.'</td>'.'<td>'.$row['Descricao'].'</td>'.'<td>'.$row['Descricao'].'</td>'.'<td>'.$row['Descricao'].'</td>'.'<td>'.'R$ '.$row['PecaPreco'].'</td>'.'<td>'.'<img style="height:60px; width:60px; background-image:none ;" src="imagens/'.$row['ImagemPeca'].'".>'.'</td>'.'</tr>'.'</tbody>';
+    echo '<br>'.'<center>'.'<h2 style="color: white;">'.$row['NomeCategoria'].'</h2>'.'</center>';
+    echo '<tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.'<h5 style="color:white;">'.$row['NomePeca'].'</td>'.'<td>'.'</td>'.'<td>'.$row['Descricao'].'</td>'.'<td>'.$row['Descricao'].'</td>'.'<td>'.$row['Descricao'].'</td>'.'<td>'.'<h5 style="color:white;">'.'R$ '.$row['PrecoPeca'].'</h5>'.'</td>'.'<td>'.'<img style="height:60px; width:60px; background-image:none ;" src="imagens/'.$row['ImagemPeca'].'".>'.'</td>'.'</tr>'.'</tbody>';
 
 
   } 

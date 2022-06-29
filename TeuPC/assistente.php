@@ -7,13 +7,13 @@ include_once "includes/header.php";
 <?php 
 $sql="SELECT 
 p.PecaID,
+p.Preco,
 p.Imagem AS ImagemPeca,
 p.Preco AS PrecoPeca,
 p.Nome AS NomePeca,
 c.Nome AS NomeCategoria,
 cp.Nome AS NomeCampo,
-pc.DadoCampo AS Campo,
-p.Preco
+pc.DadoCampo AS Campo
 FROM `pecascampos` AS pc
 INNER JOIN pecas AS p
 ON pc.PecaID = p.PecaID
@@ -33,7 +33,7 @@ ON cp.CampoID = pc.CampoID";
 <br>
   <h3>Qual processador?</h3>
 
-       <form method="post" action="resultado-assistente.php">
+  <form method="post" action="resultado-assistente.php">
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
     <input type="radio" name="CPU" id="CPU" value="1" autocomplete="off"> Intel</label>
