@@ -3,6 +3,8 @@ include_once "includes/_db.php";
 include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
+
+
 <?php
 $cpu = $_POST['CPU'];
 $preco = $_POST['preco'];
@@ -58,6 +60,7 @@ switch ($preco) {
        </div>
        <center>
 
+       
 <div class="footer">
 <?php
 include_once "includes/footer.php";

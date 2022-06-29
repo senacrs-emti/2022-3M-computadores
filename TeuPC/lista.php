@@ -20,8 +20,8 @@ $campos = "SELECT * FROM campos WHERE CategoriaID = $codigo";
 
 
 $resultado = mysqli_query( $conn , $sql);
-$campos = mysqli_query($conn, $campos);
-$pecas = mysqli_query($conn, $pecas);
+$campos = mysqli_query($conn , $campos);
+$pecas = mysqli_query($conn , $pecas);
 
 
 
@@ -49,6 +49,7 @@ if($resultado){
       <th scope="col">Preço</th>
       <th scope="col">Imagem</th>
   </thead>
+
   <?php 
   $tablista = 1; 
   if($pecas){
@@ -57,11 +58,13 @@ if($resultado){
     }
   } 
     ?>
+
 </table>
 </div>
 <?php 
 } 
 ?>
+
 
 <div class="footer">
 <?php

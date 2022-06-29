@@ -47,7 +47,7 @@
           <!--Grid column-->
           <div class="col-auto">
             <p class="pt-2">
-              <strong>Fique atualizado</strong>
+              <strong>Fique atualizado:</strong>
             </p>
           </div>
           <!--Grid column-->
@@ -56,8 +56,8 @@
           <div class="col-md-5 col-12">
             <!-- Email input -->
             <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example21" class="form-control" />
-              <label class="form-label" for="form5Example21">Email</label>
+              <input type="email" id="form5Example21" class="form-control"/>
+              <label class="form-label" for="form5Example21">E-mail</label>
             </div>
           </div>
           <!--Grid column-->

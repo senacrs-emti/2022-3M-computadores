@@ -59,11 +59,9 @@ include_once "includes/header.php";
 
 
 <div class="Texto1">
-
 <h2>O melhor assistente para você montar teu PC</h2>
 <p>É possível fazer qualquer combinação, nossa ferramenta mostrará quais são os erros de compatibilidade dentre o que foi selecionado — montar PC nunca foi tão fácil.</p>
 <p>Não somos exclusivos de nenhuma loja, nós agregamos os preços de várias lojas brasileiras e mostramos os melhores preços do mercado.</p>
-
 </div>
 
 <div class="button1">
@@ -83,7 +81,8 @@ $sql = "SELECT * FROM pecas WHERE CategoriaID=1";
 
 $resultado = mysqli_query($conn, $sql);
 ?>        
-  
+ 
+ 
 <?php
          $pecas = 1;
          $fecha = 1;

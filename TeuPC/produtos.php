@@ -4,6 +4,7 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 
+
   <!-- The slideshow/carousel -->
 
 <?php
@@ -30,6 +31,7 @@ $resultado2 = mysqli_query($conn, $pcpronto);
           $pcs++; 
          };
 ?>
+
 
 <?php
          $pcs = 1;
