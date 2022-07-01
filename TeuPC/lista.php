@@ -26,7 +26,7 @@ ON p.CategoriaID = c.CategoriaID
 AND pc.CategoriaID = c.CategoriaID
 INNER JOIN campos AS cp
 ON cp.CampoID = pc.CampoID
-WHERE c.CategoriaID = $codigo LIMIT 1";
+WHERE c.CategoriaID = $codigo";
 $sql2="SELECT * FROM categorias WHERE CategoriaID = $codigo";
 
 $resultado = mysqli_query( $conn , $sql);
@@ -38,8 +38,8 @@ $resultado2 = mysqli_query( $conn , $sql2);
   if($resultado){
     while($row = mysqli_fetch_array($resultado)){
       echo '<br>'.'<center>'.'<h2 style="color: white;">'.$row['NomeCategoria'].'</h2>'.'</center>';
-      echo '<div class="container">'.'<table class="table" style="color: white">'.'<thead>'.'<th scope="col">'.'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">Consumo</th>'.'<th scope="col">Preço</th>'.'<th scope="col">Imagem</th>'.'</thead>';
-      echo '<tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.$row['NomePeca'].'</td>'.'<td>'.$row['DadoCampo '].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.'R$ '.$row['PrecoPeca'].'</td>'.'<td>'.'<img style="height:60px; width:60px; background-image:none ;" src="imagens/'.$row['Descricao'].'".>'.'</td>'.'</tr>'.'</tbody>'.'</table>'.'</div>';
+      echo '<div class="container">'.'<table class="table" style="color: white">'.'<thead>'.'<th scope="col">'.'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.$row['NomeCampo'].'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'</thead>';
+      echo '<tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.$row['NomePeca'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.'R$ '.$row['PrecoPeca'].'</td>'.'<td>'.'<img style="height:60px; width:60px; background-image:none ;" src="imagens/'.$row['ImagemPeca'].'".>'.'</td>'.'</tr>'.'</tbody>'.'</table>'.'</div>';
 
     }
   }
