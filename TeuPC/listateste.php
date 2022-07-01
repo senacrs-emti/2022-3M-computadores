@@ -8,7 +8,7 @@ include_once "includes/header.php";
 <?php
 
 $codigo = $_GET["cat"];
-$codigo2 = $_GET["cate"];
+
 
 $sql="SELECT
 p.Imagem AS ImagemPeca,
@@ -18,7 +18,8 @@ c.Nome AS NomeCategoria,
 c.CategoriaID AS CategoriaID, 
 cp.Nome AS NomeCampo,
 pc.DadoCampo AS DadoCampo,
-p.PecaID
+p.PecaID,
+pc.Descricao
 FROM pecascampos AS pc
 INNER JOIN pecas AS p
 ON pc.PecaID = p.PecaID
@@ -27,29 +28,30 @@ ON p.CategoriaID = c.CategoriaID
 AND pc.CategoriaID = c.CategoriaID
 INNER JOIN campos AS cp
 ON cp.CampoID = pc.CampoID
-WHERE c.CategoriaID = $codigo AND p.PecaID = $codigo2";
+WHERE c.CategoriaID = $codigo";
 
 
 
 $resultado = mysqli_query( $conn , $sql);
-$row2 = mysqli_fetch_array($resultado);
-echo '<br>'.'<center>'.'<h2 style="color: white;">'.$row2['NomeCategoria'].'</h2>'.'</center>';
+
+$result = mysqli_query( $conn , "SELECT * FROM pecascampos WHERE PecaID = 1");
+$row_cnt = mysqli_num_rows($result);
+echo $row_cnt;
 ?>
 
-
+<div class="container"><table class="table" style="color: white"><thead>
   <?php 
+$i=1;
+    while($row = mysqli_fetch_array($resultado)){ 
+      if ($i <= $row_cnt) { ?>
+        <th scope="col"></th><th scope="col"><?php echo $row['NomeCampo']; ?></th>
+        <?php    $i++;
+      } } ?></thead>
 
 
-  if($resultado){
-    while($row = mysqli_fetch_array($resultado)){
-
-      echo '<div class="container">'.'<table class="table" style="color: white">'.'<thead>'.'<th scope="col">'.'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">Consumo</th>'.'<th scope="col">Preço</th>'.'<th scope="col">Imagem</th>'.'</thead>';
-      echo '<tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.$row['NomePeca'].'</td>'.'<td>'.$row['DadoCampo '].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.'R$ '.$row['PrecoPeca'].'</td>'.'<td>'.'<img style="height:60px; width:60px; background-image:none ;" src="imagens/'.$row['Descricao'].'".>'.'</td>'.'</tr>'.'</tbody>'.'</table>'.'</div>';
-
-    }
-  }
-?>
-
+    </div>
+  
+   
 
 <?php
 include_once "includes/footer.php";
