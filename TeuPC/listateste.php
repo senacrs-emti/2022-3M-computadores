@@ -36,21 +36,28 @@ $resultado = mysqli_query( $conn , $sql);
 
 $result = mysqli_query( $conn , "SELECT * FROM pecascampos WHERE PecaID = 1");
 $row_cnt = mysqli_num_rows($result);
-echo $row_cnt;
 ?>
 
-<div class="container"><table class="table" style="color: white"><thead>
+<div class="container"><table class="table" style="color: white">
+<?php 
+    if($row = mysqli_fetch_array($resultado)){ 
+      echo'<center>'.'<h1>'.$row['NomeCategoria'].'</h1>'.'</center>';
+      echo '<br>';
+    }
+?>
+<thead>
   <?php 
 $i=1;
     while($row = mysqli_fetch_array($resultado)){ 
       if ($i <= $row_cnt) { ?>
         <th scope="col"></th><th scope="col"><?php echo $row['NomeCampo']; ?></th>
         <?php     $i++; 
-      }      
-    }   
-      ?>
-      </thead>
-    </div>
+      } 
+    }     
+  echo '</thead>';
+?>
+
+</div>
   
    
 
