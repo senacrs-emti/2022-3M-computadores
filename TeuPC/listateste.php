@@ -47,12 +47,13 @@ $i=1;
         <th scope="col"></th><th scope="col"><?php echo $row['NomeCampo']; ?></th>
         <?php    $i++;
       } } ?></thead>
-
-
     </div>
   
    
 
-<?php
-include_once "includes/footer.php";
-?>
+
+
+
+
+
+    
