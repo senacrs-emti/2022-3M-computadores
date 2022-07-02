@@ -45,8 +45,11 @@ $i=1;
     while($row = mysqli_fetch_array($resultado)){ 
       if ($i <= $row_cnt) { ?>
         <th scope="col"></th><th scope="col"><?php echo $row['NomeCampo']; ?></th>
-        <?php    $i++;
-      } } ?></thead>
+        <?php     $i++; 
+      }      
+    }   
+      ?>
+      </thead>
     </div>
   
    
