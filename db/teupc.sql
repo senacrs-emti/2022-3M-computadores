@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Jul-2022 às 04:40
+-- Tempo de geração: 03-Jul-2022 às 20:57
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -368,7 +368,7 @@ INSERT INTO `pecascampos` (`PecaCampoID`, `CampoID`, `CategoriaID`, `PecaID`, `D
 (88, 2, 1, 18, '3.7GHz', 'Frequencia'),
 (89, 3, 1, 18, '4', 'Núcleo'),
 (90, 4, 1, 18, 'AM4', 'Socket'),
-(91, 5, 1, 18, '', 'Consumo'),
+(91, 5, 1, 18, '65W', 'Consumo'),
 (92, 1, 1, 19, '2', 'CpuID'),
 (93, 2, 1, 19, '3.8GHz', 'Frequencia'),
 (94, 3, 1, 19, '8', 'Núcleo'),
