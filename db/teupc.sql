@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Jul-2022 às 21:24
+-- Tempo de geração: 03-Jul-2022 às 21:35
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -606,7 +606,7 @@ INSERT INTO `pecascampos` (`PecaCampoID`, `CampoID`, `CategoriaID`, `PecaID`, `D
 (326, 44, 10, 88, 'Lenovo', 'Marca'),
 (327, 45, 10, 88, '1.8 - 4.9Ghz', 'Frequencia CPU'),
 (328, 46, 10, 88, '8 GB', 'Memória Ram'),
-(329, 47, 10, 88, 'Até 20 GB', 'Memória Expansivel'),
+(329, 47, 10, 88, 'Sim', 'Memória Expansivel'),
 (330, 48, 10, 88, 'Não', 'Vídeo Integrado'),
 (331, 49, 10, 88, 'MX 330', 'Placa de Vídeo'),
 (332, 50, 10, 88, 'SSD M2 256 GB', 'Armazenamento'),
@@ -616,7 +616,7 @@ INSERT INTO `pecascampos` (`PecaCampoID`, `CampoID`, `CategoriaID`, `PecaID`, `D
 (336, 44, 10, 89, 'Asus', 'Marca'),
 (337, 45, 10, 89, '2.4 GHz', 'Frequencia CPU'),
 (338, 46, 10, 89, '8 GB', 'Memória Ram'),
-(339, 47, 10, 89, 'Até 32 GB', 'Memória Expansivel'),
+(339, 47, 10, 89, 'Sim', 'Memória Expansivel'),
 (340, 48, 10, 89, 'Sim', 'Vídeo Integrado'),
 (341, 49, 10, 89, 'Intel Ires XE', 'Placa de Vídeo'),
 (342, 50, 10, 89, 'SSD M2 256 GB', 'Armazenamento'),
