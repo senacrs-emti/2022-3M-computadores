@@ -34,3 +34,16 @@ if($resultado){
 <?php 
 } 
 ?>
+switch ($row3['DadoCampo']) {
+        case '1':
+          # code...
+          break;
+          case '2':
+            # code...
+            break;
+        default:
+        echo $row3['DadoCampo'];
+          break;
+      } ?>
+      <td><?php echo $row3['DadoCampo']; ?></td>
+      $row3['DadoCampo'] == 1 || $row3['DadoCampo'] == 2

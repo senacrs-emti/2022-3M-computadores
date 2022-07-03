@@ -5,6 +5,7 @@ include_once "includes/header.php";
 
 $codigo = $_GET["cat"];
 $codigo2 = $_GET["cate"];
+$fr = $codigo2 + 1;
 $i=1;
 $a=0;
 $r=5;
@@ -47,7 +48,28 @@ AND pc.CategoriaID = c.CategoriaID
 INNER JOIN campos AS cp
 ON cp.CampoID = pc.CampoID
 WHERE c.CategoriaID = $codigo");
+
+$resultado3 = mysqli_query( $conn , "SELECT
+p.Imagem AS ImagemPeca,
+p.Preco AS PrecoPeca,
+p.Nome AS NomePeca,
+c.Nome AS NomeCategoria,
+c.CategoriaID AS CategoriaID, 
+cp.Nome AS NomeCampo,
+pc.DadoCampo AS DadoCampo,
+pc.Descricao
+FROM pecascampos AS pc
+INNER JOIN pecas AS p
+ON pc.PecaID = p.PecaID
+INNER JOIN categorias AS c
+ON p.CategoriaID = c.CategoriaID
+AND pc.CategoriaID = c.CategoriaID
+INNER JOIN campos AS cp
+ON cp.CampoID = pc.CampoID
+WHERE c.CategoriaID = $codigo");
 ?>
+?>
+
 
 <div class="container"><table class="table" style="color: white">
 <?php 
@@ -59,9 +81,15 @@ WHERE c.CategoriaID = $codigo");
 <thead>
 <th scope="col">Nome</th>
   <?php 
-  while($row2 = mysqli_fetch_array($resultado)){ 
+  while($row2 = mysqli_fetch_array($resultado3)){ 
     if ($i <= $codigo2) { ?>
-       <th scope="col"><?php echo $row2['NomeCampo']; ?></th>
+       <th scope="col">
+        <?php if ($row2['NomeCampo'] == 'CpuID') {
+          echo 'Marca';
+        } else {
+          echo $row2['NomeCampo']; 
+        }?>
+      </th>
        <?php     $i++; 
     } 
   }  
@@ -73,24 +101,34 @@ WHERE c.CategoriaID = $codigo");
     <tr>
     <?php 
     while ($row3 = mysqli_fetch_array($resultado2)) {   
-    if ($a == 5) {?>
-      <tr>
-      <?php } ?>
-<td><?php echo $row3['DadoCampo']; ?></td>
+      if ($a < 1) { ?>
+        <td><?php echo $row3['NomePeca']; ?></td>
+     <?php }
+    if ($a == $codigo2) {?>
+      <tr><td><?php echo $row3['NomePeca']; ?></td>
+      <?php } 
+    if ($row3['NomeCampo'] == 'CpuID') {
+      switch ($row3['DadoCampo']) {
+        case '1':
+          echo '<td>Intel</td>';
+          break;
+        case '2':
+          echo '<td>AMD</td>';
+          break;
+      }
+    }else{
+        echo '<td>'.$row3['DadoCampo'].'</td>';
+      }
 
-    <?php 
-    echo $a;
     $a++;
-    switch ($a) {
-      case '5':
-        ?></tr><?php
-        break;
-      case '6':
-        $a = 1;
-        break;
+    
+    if ($a == $codigo2) {
+      ?><td><?php echo $row3['PrecoPeca']; ?></td><td><img style="height:60px; width:60px; background-image:none ;" src="imagens/<?php echo $row3['ImagemPeca']; ?>"></td></tr><?php
+    }if ($a == $fr) {
+      $a = 1;
     }
+
        }
-       
  ?>
   </tbody>
 </table>
