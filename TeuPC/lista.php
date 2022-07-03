@@ -19,7 +19,8 @@ c.Nome AS NomeCategoria,
 c.CategoriaID AS CategoriaID, 
 cp.Nome AS NomeCampo,
 pc.DadoCampo AS DadoCampo,
-pc.Descricao
+pc.Descricao,
+p.Link as Link
 FROM pecascampos AS pc
 INNER JOIN pecas AS p
 ON pc.PecaID = p.PecaID
@@ -87,10 +88,10 @@ WHERE c.CategoriaID = $codigo");
     <?php 
     while ($row3 = mysqli_fetch_array($resultado2)) {   
       if ($a < 1) { ?>
-        <td><?php echo $row3['NomePeca']; ?></td>
+        <td><a href="<?php echo $row3['Link']; ?>"><?php echo $row3['NomePeca']; ?></a></td>
      <?php }
     if ($a == $codigo2) {?>
-      <tr><td><?php echo $row3['NomePeca']; ?></td>
+<td><a href="<?php echo $row3['Link']; ?>"><?php echo $row3['NomePeca']; ?></a></td>
       <?php } 
     switch ($row3['NomeCampo']) {
       case 'CpuID':

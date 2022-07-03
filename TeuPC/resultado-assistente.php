@@ -85,7 +85,7 @@ while ($row = mysqli_fetch_array($resultado)) {
 echo '<tr>';
 if ($row['PecaID'] == $pr1 || $row['PecaID'] == $pr2 || $row['PecaID'] == $pr3 || $row['PecaID'] == $pr4 || $row['PecaID'] == $pr5 || $row['PecaID'] == $pr6 || $row['PecaID'] == $pr7 || $row['PecaID'] == $pr8 || $row['PecaID'] == $pr9 || $row['PecaID'] == $pr10 || $row['PecaID'] == $pr11) {
   $x++;
-  echo '<td>'.$row['Nome'].'</td>';
+  echo '<td><a href="'.$row['Link'].'">'.$row['Nome'].'</a></td>';
   echo '<td>R$'.$row['Preco'].'</td>'; ?>
   <td><img style="height:80px; width:80px; background-image:none ;" src="imagens/<?php echo $row['Imagem']; ?>"></td> 
   <?php
