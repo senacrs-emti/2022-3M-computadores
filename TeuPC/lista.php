@@ -33,11 +33,16 @@ $resultado = mysqli_query( $conn , $sql);
 $resultado2 = mysqli_query( $conn , $sql2);
 ?>
 
+<?php 
+    if($row = mysqli_fetch_array($resultado)){ 
+      echo'<center>'.'<h1>'.$row['NomeCategoria'].'</h1>'.'</center>';
+      echo '<br>';
+    }
+?>
 
-  <?php 
+<?php 
   if($resultado){
     while($row = mysqli_fetch_array($resultado)){
-      echo '<br>'.'<center>'.'<h2 style="color: white;">'.$row['NomeCategoria'].'</h2>'.'</center>';
       echo '<div class="container">'.'<table class="table" style="color: white">'.'<thead>'.'<th scope="col">'.'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.$row['NomeCampo'].'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'</thead>';
       echo '<tbody>'.'<tr>'.'<th scope="row">1</th>'.'<td>'.$row['NomePeca'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.$row['DadoCampo'].'</td>'.'<td>'.'R$ '.$row['PrecoPeca'].'</td>'.'<td>'.'<img style="height:60px; width:60px; background-image:none ;" src="imagens/'.$row['ImagemPeca'].'".>'.'</td>'.'</tr>'.'</tbody>'.'</table>'.'</div>';
 
