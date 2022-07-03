@@ -68,7 +68,6 @@ INNER JOIN campos AS cp
 ON cp.CampoID = pc.CampoID
 WHERE c.CategoriaID = $codigo");
 ?>
-?>
 
 
 <div class="container"><table class="table" style="color: white">
