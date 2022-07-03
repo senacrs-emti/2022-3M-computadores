@@ -5,6 +5,7 @@ include_once "includes/header.php";
 ?>
 
 
+
 <div class= "main"> 
 <div class="row">  
 <!-- Carousel -->
@@ -45,7 +46,7 @@ include_once "includes/header.php";
 <br>
 
 <div class="card" style="height: 500px" class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-  <img class="card-img-top" src="imagens/monkey_branco.png" alt="Imagem de capa do card" style="height: 270px">
+  <img class="card-img-top" src="imagens/monke.jpg" alt="Imagem de capa do card" style="height: 300px">
   <div class="card-body">
     <h5 class="card-title" style="color: white">TEU PC - A maneira mais fácil de montar um!</h5>
     <p class="card-text">Conte conosco para montar o teu melhor PC de forma fácil e rápida. Mais de 100 peças selecionadas a dedo visando qualidade e confiança.
@@ -59,9 +60,11 @@ include_once "includes/header.php";
 
 
 <div class="Texto1">
+
 <h2>O melhor assistente para você montar teu PC</h2>
-<p>É possível fazer qualquer combinação, nossa ferramenta mostrará quais são os erros de compatibilidade dentre o que foi selecionado — montar PC nunca foi tão fácil.</p>
+<p>É possível fazer qualquer combinação, nossa ferramenta mostrará quais são os erros de compatibilidade dentre o que foi selecionado. Montar PC nunca foi tão fácil!</p>
 <p>Não somos exclusivos de nenhuma loja, nós agregamos os preços de várias lojas brasileiras e mostramos os melhores preços do mercado.</p>
+
 </div>
 
 <div class="button1">
@@ -72,7 +75,7 @@ include_once "includes/header.php";
 
 <div class="Texto1" style="margin-top: 0px;">
 
-<h2>Ofertas</h2>
+<h2>Ofertas!</h2>
 
 </div>
 <?php
@@ -81,17 +84,16 @@ $sql = "SELECT * FROM pecas WHERE CategoriaID=1";
 
 $resultado = mysqli_query($conn, $sql);
 ?>        
- 
- 
+  
 <?php
          $pecas = 1;
          $fecha = 1;
          while($row = mysqli_fetch_array($resultado)){
-       echo '<div class="card2" style="width: 17.5rem; margin-left: 40px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">';   
+       echo '<div class="card2" style="width: 17.5rem; margin-left: 20px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3">';   
        echo '<img class="card-img-top2"src="imagens/'.$row['Imagem'].'" alt="Imagem de capa do card">';
        echo '<div class="card-body2" style="height:265px; width:265px">';
        echo '<h5 class="card-title2">'.$row['Nome'].'</h5><p class="card-text2-preco">R$ '.$row['Preco'].'</p>';
-       echo '<a href="'.$row['Link'].'" class="btn btn-primary2">Comprar</a>';       
+       echo '<a href="'.$row['Link'].'" class="btn btn-primary2">Comprar</a>';
        echo '</div>';
        echo '<br>';
        echo '<br>';

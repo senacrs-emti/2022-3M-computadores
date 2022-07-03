@@ -3,65 +3,97 @@ include_once "includes/_db.php";
 include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
-
-
 <?php
+$x = 1;
+$pre= 0;
+$preto= 0;
+$pr1 = ''; $pr2 = ''; $pr3 = ''; $pr4 = ''; $pr5 = ''; $pr6 = ''; $pr7 = ''; $pr8 = ''; $pr9 = ''; $pr10 = '';  $pr11 = '';
+$sql="SELECT * FROM pecas"; 
+$resultado = mysqli_query( $conn , $sql);
 $cpu = $_POST['CPU'];
 $preco = $_POST['preco'];
-$placa = $_POST['placa'];
+$jogos = $_POST['jogos'];
 $npreco = '';
-if ($tempo == 'parcelado') {
-$parcela = 'Em até 12x sem juros';
-}else {
-$parcela = 'Em apanas 1x';
-}
-if ($placa == 'sem') {
-$plca = 'Sem placa de video integrada';
-}else {
-$plca = 'Com placa de video integrada';
-}
-if ($cpu == 'intel') {
-$nome = 'Computador com Intel';
-}else {
-$nome = 'Computador com AMD';
-}
-switch ($preco) {
-    case 4:
-        $npreco = 'R$4.000,00';
-      break;
-    case 6:
-        $npreco = 'R$6.000,00';
-      break;
-    case 8:
-        $npreco = 'R$8.000,00';
-      break;
-    case 11:
-        $npreco = 'R$11.000,00';
-      break;
-}
 
-
+if ($cpu == 1) {
+  if ($jogos == 'sim') {
+    switch ($preco) {
+        case '6':
+          $pr1 = '2'; $pr2 = '29'; $pr3 = '34'; $pr4 = '44'; $pr5 = '54'; $pr6 = '67'; $pr7 = '73'; $pr8 = '86'; $pr9 = ''; $pr10 = '';  $pr11 = '';
+          break;
+          case '8':
+            $pr1 = '5'; $pr2 = '26'; $pr3 = '34'; $pr4 = '44'; $pr5 = '54'; $pr6 = '62'; $pr7 = '73'; $pr8 = '86'; $pr9 = '40'; $pr10 = '';  $pr11 = '';
+            break;
+            case '11':
+              $pr1 = '10'; $pr2 = '28'; $pr3 = '34'; $pr4 = '34'; $pr5 = '43'; $pr6 = '57'; $pr7 = '63'; $pr8 = '73'; $pr9 = '86'; $pr10 = '';  $pr11 = '';
+              break;
+    }
+  }else {
+    switch ($preco) {
+        case '6':
+          $pr1 = '2'; $pr2 = '29'; $pr3 = '34'; $pr4 = '44'; $pr5 = '54'; $pr6 = '67'; $pr7 = '73'; $pr8 = '86'; $pr9 = ''; $pr10 = '';  $pr11 = '';
+          break;
+          case '8':
+            $pr1 = '5'; $pr2 = '26'; $pr3 = '34'; $pr4 = '44'; $pr5 = '54'; $pr6 = '62'; $pr7 = '73'; $pr8 = '86'; $pr9 = '40'; $pr10 = '';  $pr11 = '';
+            break;
+            case '11':
+              $pr1 = '10'; $pr2 = '28'; $pr3 = '34'; $pr4 = '86'; $pr5 = '43'; $pr6 = '57'; $pr7 = '63'; $pr8 = '73'; $pr9 = ''; $pr10 = '';  $pr11 = '';
+              break;
+    }
+  }
+}else {
+    if ($jogos == 'sim') {
+      switch ($preco) {
+          case '6':
+            $pr1 = '13'; $pr2 = '21'; $pr3 = '34'; $pr4 = '44'; $pr5 = '54'; $pr6 = '60'; $pr7 = '73'; $pr8 = '86'; $pr9 = ''; $pr10 = '';  $pr11 = '';
+            break;
+            case '8':
+              $pr1 = '19'; $pr2 = '30'; $pr3 = '34'; $pr4 = '44'; $pr5 = '57'; $pr6 = '62'; $pr7 = '73'; $pr8 = '86'; $pr9 = '40'; $pr10 = '';  $pr11 = '';
+              break;
+              case '11':
+                $pr1 = '19'; $pr2 = '30'; $pr3 = '34'; $pr4 = '86'; $pr5 = '43'; $pr6 = '57'; $pr7 = '63'; $pr8 = '73'; $pr9 = ''; $pr10 = '';  $pr11 = '';
+                break;
+      }
+    }else {
+      switch ($preco) {
+        case '6':
+          $pr1 = '13'; $pr2 = '21'; $pr3 = '34'; $pr4 = '44'; $pr5 = '54'; $pr6 = '60'; $pr7 = '73'; $pr8 = '86'; $pr9 = ''; $pr10 = '';  $pr11 = '';
+          break;
+          case '8':
+            $pr1 = '19'; $pr2 = '30'; $pr3 = '34'; $pr4 = '44'; $pr5 = '57'; $pr6 = '63'; $pr7 = '73'; $pr8 = '86'; $pr9 = '40'; $pr10 = '';  $pr11 = '';
+            break;
+            case '11':
+              $pr1 = '19'; $pr2 = '30'; $pr3 = '34'; $pr4 = '34'; $pr5 = '43'; $pr6 = '57'; $pr7 = '63'; $pr8 = '73'; $pr9 = '86'; $pr10 = '';  $pr11 = '';
+              break;
+    }
+    }
+  }
 
 ?>
+<div class="container"><table class="table" style="color: white">
 <br>
-       <br>
-       <center>
- <div class="card card2" style="width: 500px; height:500px; margin-left: -5px;" class="col-sm-3 col-md-3 col-lg-3 col-xl-3"> 
-       <img class="card-img-top2" style="width: 500px; height:500px;" src="imagens/nave.jpg" alt="Imagem de capa do card">
-     <div class="card-body2">
-       <h5 class="card-title2"><?php echo $nome; ?></h5>
-       <p class="card-text2"><?php echo $plca; ?></p>
-            <p class="card-text2-preco"><?php echo $npreco; ?></p>
-            <p class="card-text2"><?php echo $parcela; ?></p>
-       <a href="https://www.pichau.com.br/" class="btn btn-primary2">Comprar</a>
-       </div>
-       <br>
-       <br>
-       </div>
-       <center>
-
-       
-<div class="footer">
+<center><h1>Peças</h1></center>
+<thead>
+<th scope="col">Nome</th>
+<th scope="col">Preço</th>
+<th scope="col">Imagem</th>
+</thead>
+  <tbody>
+    <tr>
+    <?php 
+while ($row = mysqli_fetch_array($resultado)) {
+echo '<tr>';
+if ($row['PecaID'] == $pr1 || $row['PecaID'] == $pr2 || $row['PecaID'] == $pr3 || $row['PecaID'] == $pr4 || $row['PecaID'] == $pr5 || $row['PecaID'] == $pr6 || $row['PecaID'] == $pr7 || $row['PecaID'] == $pr8 || $row['PecaID'] == $pr9 || $row['PecaID'] == $pr10 || $row['PecaID'] == $pr11) {
+  $x++;
+  echo '<td><a href="'.$row['Link'].'">'.$row['Nome'].'</a></td>';
+  echo '<td>R$'.$row['Preco'].'</td>'; ?>
+  <td><img style="height:80px; width:80px; background-image:none ;" src="imagens/<?php echo $row['Imagem']; ?>"></td> 
+  <?php
+ }
+ echo '</tr>'; }?>
+  </tbody>
+</table>
+</div>
 <?php
 include_once "includes/footer.php";
 ?>

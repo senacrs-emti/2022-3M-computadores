@@ -3,7 +3,7 @@ include_once '_valida.php';
 include_once '_db.php';
 include_once '_head.php';
 
-$sql= "SELECT * FROM usuarios";
+$sql= "SELECT * FROM pecas";
 $resultado = mysqli_query($conn,$sql);
 $total = mysqli_num_rows($resultado);
 
@@ -11,9 +11,9 @@ Include_once '_menu.php';
 ?>
 
     <main>
-        <h2>Administração dos Usuário</h2>
+        <h2>Administração das Peças</h2>
 
-        <a href="usuario-salvar.php">inserir</a>
+        <a href="pecas-salvar.php">inserir</a>
         <hr>
         <table border="1">
             <tr>
@@ -27,9 +27,9 @@ Include_once '_menu.php';
                 while ($dado = mysqli_fetch_array($resultado)) {
             ?>
             <tr>
-                <td><?php echo $dado['UsuarioID']; ?></td>
-                <td><a href="usuario-salvar.php?acao=salvar&id=<?php echo $dado['UsuarioID']; ?>"><?php echo $dado['Nome']; ?></a></td>
-                <td><a href="usuario-processa.php?acao=excluir&id=<?php echo $dado['UsuarioID']; ?>">Excluir</a></td>
+                <td><?php echo $dado['PecaID']; ?></td>
+                <td><a href="pecas-salvar.php?acao=salvar&id=<?php echo $dado['PecaID']; ?>"><?php echo $dado['Nome']; ?></a></td>
+                <td><a href="pecas-processa.php?acao=excluir&id=<?php echo $dado['PecaID']; ?>">Excluir</a></td>
             </tr>
             <?php
                 }
@@ -44,7 +44,7 @@ Include_once '_menu.php';
             <tr>
                 <td colspan="3">Total de Registros: <?php echo $total;?></td>
             </tr>
-        </table>    
+        </table>
     </main>
 <?php
 Include_once '_footer.php';
