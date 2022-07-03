@@ -83,15 +83,21 @@ WHERE c.CategoriaID = $codigo");
   while($row2 = mysqli_fetch_array($resultado3)){ 
     if ($i <= $codigo2) { ?>
        <th scope="col">
-        <?php if ($row2['NomeCampo'] == 'CpuID') {
-          echo 'Marca';
-        } else {
+        <?php switch ($row2['NomeCampo']) {
+          case 'CpuID':
+            echo 'Marca';
+            break;
+          case 'GpuID':
+            echo 'Marca';
+            break;
+          default:
           echo $row2['NomeCampo']; 
-        }?>
+            break;
+        }}?>
       </th>
        <?php     $i++; 
     } 
-  }  
+    
 ?>
 <th scope="col">Preço</th>
 <th scope="col">Imagem</th>
@@ -106,19 +112,24 @@ WHERE c.CategoriaID = $codigo");
     if ($a == $codigo2) {?>
       <tr><td><?php echo $row3['NomePeca']; ?></td>
       <?php } 
-    if ($row3['NomeCampo'] == 'CpuID') {
-      switch ($row3['DadoCampo']) {
-        case '1':
+    switch ($row3['NomeCampo']) {
+      case 'CpuID':
+        if ($row3['DadoCampo'] == 1) {
           echo '<td>Intel</td>';
-          break;
-        case '2':
+        }else {
           echo '<td>AMD</td>';
-          break;
-      }
-    }else{
+        }
+        break;
+      case 'GpuID':
+        if ($row3['DadoCampo'] == 1) {
+          echo '<td>Nvidia</td>';
+        }else {
+          echo '<td>AMD</td>'; }
+        break;
+      default:
         echo '<td>'.$row3['DadoCampo'].'</td>';
-      }
-
+        break;
+    }
     $a++;
     
     if ($a == $codigo2) {
@@ -133,10 +144,6 @@ WHERE c.CategoriaID = $codigo");
 </table>
 </div>
   
-   
-
-
-
 <?php
 include_once "includes/footer.php";
 ?>
