@@ -122,7 +122,7 @@ WHERE c.CategoriaID = $codigo");
     $a++;
     
     if ($a == $codigo2) {
-      ?><td><?php echo $row3['PrecoPeca']; ?></td><td><img style="height:60px; width:60px; background-image:none ;" src="imagens/<?php echo $row3['ImagemPeca']; ?>"></td></tr><?php
+      ?><td><?php echo 'R$ '.$row3['PrecoPeca']; ?></td><td><img style="height:60px; width:60px; background-image:none ;" src="imagens/<?php echo $row3['ImagemPeca']; ?>"></td></tr><?php
     }if ($a == $fr) {
       $a = 1;
     }
