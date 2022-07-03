@@ -39,7 +39,8 @@ $resultado2 = mysqli_query( $conn , $sql2);
       echo '<br>';
     }
 ?>
-  <?php 
+
+<?php 
   if($resultado){
     while($row = mysqli_fetch_array($resultado)){
       echo '<div class="container">'.'<table class="table" style="color: white">'.'<thead>'.'<th scope="col">'.'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.$row['NomeCampo'].'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'<th scope="col">'.$row['NomeCampo'].'</th>'.'</thead>';
