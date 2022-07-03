@@ -4,26 +4,6 @@ include_once "includes/head.php";
 include_once "includes/header.php";
 ?>
 
-<?php 
-$sql="SELECT 
-p.PecaID,
-p.Preco,
-p.Imagem AS ImagemPeca,
-p.Preco AS PrecoPeca,
-p.Nome AS NomePeca,
-c.Nome AS NomeCategoria,
-cp.Nome AS NomeCampo,
-pc.DadoCampo AS Campo
-FROM `pecascampos` AS pc
-INNER JOIN pecas AS p
-ON pc.PecaID = p.PecaID
-INNER JOIN categorias AS c
-ON p.CategoriaID = c.CategoriaID
-AND pc.CategoriaID = c.CategoriaID
-INNER JOIN campos AS cp
-ON cp.CampoID = pc.CampoID";
-?>
-
 
 
 
@@ -43,22 +23,20 @@ ON cp.CampoID = pc.CampoID";
 
 <br>
     <br>
-    <h3>Placa de vídeo dedicada?</h3>
+    <h3>Para jogos?</h3>
 
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="radio" name="placa" id="placa" value="com" autocomplete="off"> Sim</label>
+    <input type="radio" name="jogos" id="jogos" value="sim" autocomplete="off"> Sim</label>
   <label class="btn btn-secondary">
-    <input type="radio" name="placa" id="placa" value="sem" autocomplete="off"> Não</label>
+    <input type="radio" name="jogos" id="jogos" value="nao" autocomplete="off"> Não</label>
 </div>
-
 <br>
+
     <br>
     <h3>Qual seria o preço desejado?</h3>
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
-    <input type="radio" name="preco" id="preco" value="4" autocomplete="off"> 4mil</label>
-  <label class="btn btn-secondary">
     <input type="radio" name="preco" id="preco" value="6" autocomplete="off"> 6mil</label>
   <label class="btn btn-secondary active">
     <input type="radio" name="preco" id="preco" value="8" autocomplete="off"> 8mil</label>
@@ -77,6 +55,7 @@ ON cp.CampoID = pc.CampoID";
 </div>
 <br>
 <br>
+
 
 <input class="btn btn-secondary" style="text-decoration: green;" type="submit" value="Montar" name="Montar">
 
