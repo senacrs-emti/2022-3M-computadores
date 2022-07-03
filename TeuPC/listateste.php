@@ -6,7 +6,7 @@ include_once "includes/header.php";
 $codigo = $_GET["cat"];
 $codigo2 = $_GET["cate"];
 $i=1;
-$a=1;
+$a=0;
 $r=5;
 $sql="SELECT
 p.Imagem AS ImagemPeca,
@@ -81,10 +81,16 @@ WHERE c.CategoriaID = $codigo");
     <?php 
     echo $a;
     $a++;
-       if ($a == 5) {?>
-        </tr>
-        <?php  }  
-  }
+    switch ($a) {
+      case '5':
+        ?></tr><?php
+        break;
+      case '6':
+        $a = 1;
+        break;
+    }
+       }
+       
  ?>
   </tbody>
 </table>
