@@ -9,17 +9,17 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="lista.php?cat=1">Processadores</a>
-      <a href="lista.php?cat=2">Placa Mãe</a>
-      <a href="lista.php?cat=3">Memoria Ram</a>
-      <a href="lista.php?cat=4">SSD</a>
-      <a href="lista.php?cat=5">HD</a>
-      <a href="lista.php?cat=6">Cooler</a>
-      <a href="lista.php?cat=7">Placa De Video</a>
-      <a href="lista.php?cat=8">Fontes</a>
-      <a href="lista.php?cat=9">Gabinete</a>
-      <a href="lista.php?cat=10">Notebook</a>
-      <a href="lista.php?cat=11">PC Montados</a>
+      <a href="lista.php?cat=1&cate=5">Processadores</a>
+      <a href="lista.php?cat=2&cate=4">Placa Mãe</a>
+      <a href="lista.php?cat=3&cate=4">Memoria Ram</a>
+      <a href="lista.php?cat=4&cate=4">SSD</a>
+      <a href="lista.php?cat=5&cate=4">HD</a>
+      <a href="lista.php?cat=6&cate=5">Cooler</a>
+      <a href="lista.php?cat=7&cate=5">Placa De Video</a>
+      <a href="lista.php?cat=8&cate=5">Fontes</a>
+      <a href="lista.php?cat=9&cate=3">Gabinete</a>
+      <a href="lista.php?cat=10&cate=10">Notebook</a>
+      <a href="lista.php?cat=11&cate=12">PC Montados</a>
     </div>
   </div>
   </a>
