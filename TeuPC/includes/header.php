@@ -10,7 +10,7 @@
     </button>
     <div class="dropdown-content">
       <a href="lista.php?cat=1&cate=5">Processadores</a>
-      <a href="lista.php?cat=2&cate=4">Placa Mãe</a>
+      <a href="lista.php?cat=2&cate=5">Placa Mãe</a>
       <a href="lista.php?cat=3&cate=4">Memoria Ram</a>
       <a href="lista.php?cat=4&cate=4">SSD</a>
       <a href="lista.php?cat=5&cate=4">HD</a>
