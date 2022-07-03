@@ -9,27 +9,8 @@ $fr = $codigo2 + 1;
 $i=1;
 $a=0;
 $r=5;
-$sql="SELECT
-p.Imagem AS ImagemPeca,
-p.Preco AS PrecoPeca,
-p.Nome AS NomePeca,
-c.Nome AS NomeCategoria,
-c.CategoriaID AS CategoriaID, 
-cp.Nome AS NomeCampo,
-pc.DadoCampo AS DadoCampo,
-p.PecaID,
-pc.Descricao
-FROM pecascampos AS pc
-INNER JOIN pecas AS p
-ON pc.PecaID = p.PecaID
-INNER JOIN categorias AS c
-ON p.CategoriaID = c.CategoriaID
-AND pc.CategoriaID = c.CategoriaID
-INNER JOIN campos AS cp
-ON cp.CampoID = pc.CampoID
-WHERE c.CategoriaID = $codigo";
 
-$resultado = mysqli_query( $conn , $sql);
+$resultado = mysqli_query( $conn , "SELECT * FROM categorias WHERE CategoriaID = $codigo");
 $resultado2 = mysqli_query( $conn , "SELECT
 p.Imagem AS ImagemPeca,
 p.Preco AS PrecoPeca,
@@ -73,7 +54,7 @@ WHERE c.CategoriaID = $codigo");
 <div class="container"><table class="table" style="color: white">
 <?php 
     if($row = mysqli_fetch_array($resultado)){ 
-      echo'<center>'.'<h1>'.$row['NomeCategoria'].'</h1>'.'</center>';
+      echo'<center>'.'<h1>'.$row['Nome'].'</h1>'.'</center>';
       echo '<br>';
     }
 ?>
@@ -85,16 +66,15 @@ WHERE c.CategoriaID = $codigo");
        <th scope="col">
         <?php switch ($row2['NomeCampo']) {
           case 'CpuID':
-            echo 'Marca';
+            echo 'Marca</th>';
             break;
           case 'GpuID':
-            echo 'Marca';
+            echo 'Marca</th>';
             break;
           default:
-          echo $row2['NomeCampo']; 
+          echo $row2['NomeCampo']; ?></th><?php 
             break;
         }}?>
-      </th>
        <?php     $i++; 
     } 
     
