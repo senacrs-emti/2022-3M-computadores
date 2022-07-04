@@ -47,7 +47,6 @@ Include_once '_menu.php';
         </table>
     </main>
 <?php
-Include_once '_footer.php';
 
       
 ?>
