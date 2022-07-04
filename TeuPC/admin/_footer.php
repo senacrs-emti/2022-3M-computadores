@@ -46,14 +46,7 @@
             <li>Open ticket</li>
           </ul>
         </div>
-        <div class="col social">
-          <h1>Social</h1>
-          <ul>
-            <li><img src="images/facebook-logo-facebook-logo-9.png" width="32" style="width: 32px;"></li>
-            <li><img src="images/R.png" width="32" style="width: 32px;"></li>
-            <li><img src="images/INSTAGRAM1-LOW-1-768x768.png" width="32" style="width: 32px;"></li>
-          </ul>
-        </div>
+        
       <div class="clearfix"></div>
       </div>
       </div>
