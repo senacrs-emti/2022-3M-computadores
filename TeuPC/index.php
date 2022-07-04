@@ -46,7 +46,7 @@ include_once "includes/header.php";
 <br>
 
 <div class="card" style="height: 500px" class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-  <img class="card-img-top" src="imagens/monke.jpg" alt="Imagem de capa do card" style="height: 300px">
+  <img class="card-img-top" src="imagens/gamer1.jpg" alt="Imagem de capa do card" style="height: 300px">
   <div class="card-body">
     <h5 class="card-title" style="color: white">TEU PC - A maneira mais fácil de montar um!</h5>
     <p class="card-text">Conte conosco para montar o teu melhor PC de forma fácil e rápida. Mais de 100 peças selecionadas a dedo visando qualidade e confiança.
