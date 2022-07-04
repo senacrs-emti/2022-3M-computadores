@@ -25,7 +25,7 @@
         <i class="fa fa-linkedin"></i>
       </a>
 
-      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/" role="button" style="font-size: 2rem;">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/senacrs-emti/2022-3M-computadores" role="button" style="font-size: 2rem;">
         <i class="fa fa-github"></i>
       </a>
     </section>
