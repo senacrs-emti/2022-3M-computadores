@@ -17,7 +17,7 @@ $resultado2 = mysqli_query($conn, $pcpronto);
     if($row = mysqli_fetch_array($resultado)){ 
       echo '<br>';
       echo '<br>';
-      echo'<center>'.'<h1>'.'Notebooks E PCs Montados'.'</h1>'.'</center>';
+      echo'<center>'.'<h1>'.'Notebooks e PCs Montados'.'</h1>'.'</center>';
       echo '<br>';
     }
 ?>
